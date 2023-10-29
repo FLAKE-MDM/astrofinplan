@@ -1,0 +1,141 @@
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 2rem;
+    padding: 1.5rem 2.45rem;
+    line-height: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02rem;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    border: none;
+    color: #fff;
+    flex-shrink: 0;
+    border-radius: 2.9rem;
+    position: relative;
+    z-index: 1;
+
+    @include bp(md){
+        font-size: 1.6rem;
+        padding: 0.75rem 2rem;
+    }
+
+    &::before, &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease-out;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    @include bp(hv){
+        &:hover{
+            color: #fff;
+
+            &::before{
+                opacity: 1;
+            }
+        }
+    }
+
+    &:active{
+        &:after{
+            opacity: 1;
+        }
+    }
+
+    &:disabled, &.disabled{
+        cursor: default;
+        pointer-events: none;
+        background: gray;
+        color: gray;
+    }
+
+    &_primary{
+        background: linear-gradient(180deg, #1ACDCD 0%, #028D8C 100%);
+
+        &:before{
+            background: linear-gradient(180deg, #17B2B2 0%, #026362 100%);
+        }
+
+        &:after{
+            background: linear-gradient(180deg, #1EECEC 0%, #01B1B0 100%);
+        }
+    }
+
+    // &_light{
+    //     background:#fff;
+    //     color: $secondary;
+
+    //     @include bp(hv){
+    //         &:hover{
+    //             background: $primary;
+    //             border-color: $primary;
+    //         }
+    //     }
+    // }
+
+    // &_transparent{
+    //     background:none;
+
+    //     @include bp(hv){
+    //         &:hover{
+    //             background: $primary;
+    //             border-color: $primary;
+    //         }
+    //     }
+    // }
+
+    // &_transparent-primary{
+    //     background: none;
+    //     border-color: $primary;
+    //     color: $primary;
+
+    //     @include bp(hv){
+    //         &:hover{
+    //             background: $primary;
+    //             border-color: $primary;
+    //         }
+    //     }
+    // }
+
+    // &_transparent-secondary{
+    //     background: none;
+    //     border-color: $secondary;
+    //     color: $secondary;
+
+    //     @include bp(hv){
+    //         &:hover{
+    //             background: $secondary;
+    //             border-color: $secondary;
+    //         }
+    //     }
+    // }
+
+    &_size{
+        // &-xs{
+        //     padding: 0.2rem 1.6rem;
+        //     border-radius: 30px;
+        //     .btn__icon{
+        //         margin: -0.2rem -1.4rem 0 11px;
+        //     }
+        // }
+        // &-sm{
+        //     padding: 0.9rem 1.6rem;
+        // }
+        &-md{
+            padding: 1.45rem 5.6rem;
+        }
+    }
+}
+
+

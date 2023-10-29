@@ -1,0 +1,200 @@
+.header{
+    padding: 2.7rem 0;
+    background: $light;
+    position: relative;
+
+    @include bp(md){
+        padding: 1.2rem 0 1.1rem;
+    }
+
+    @include bp(sm){
+        padding: 1.5rem 0;
+    }
+
+    &__logo{
+
+        @include bp(xl){
+            width: 9.8rem;
+        }
+
+        @include bp(sm){
+            width: 6.5rem;
+        }
+    }
+
+    .btn{
+        margin-top: -0.1rem;
+
+        @include bp(sm){
+            margin: 0;
+        }
+    }
+}
+
+.logo{
+    flex-shrink: 0;
+
+    @include bp(hv){
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+}
+
+.nav{
+    margin: 1.2rem 3.4% 0 auto;
+
+    @include bp(xxxl){
+        margin-right: 2rem;
+    }
+
+    @include bp(lg){
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        max-height: calc(100vh - 11.3rem);
+        overflow-y: auto;
+        border-radius: 2rem;
+        border: 3px solid #14918F;
+        background: #FFF;
+        margin: 0;
+        padding: 2.7rem 2rem 2.5rem;
+    }
+
+    @include bp(md){
+        max-height: calc(100vh - 8.3rem);
+    }
+
+    &__contacts{
+        width: fit-content;
+        margin: 0 auto 2.5rem;
+
+        @include bp(md){
+            font-size: 1.6rem;
+        }
+
+        p{
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__social-list.social-list{
+        margin: 3.1rem 0 1.3rem;
+
+        .social-list__item{
+            margin: 0 0.8rem;
+            width: 4.1rem;
+        }
+    }
+
+    &-list{
+        font-size: 2rem;
+
+        @include bp(lg){
+            margin-bottom: 2.9rem;
+        }
+
+        @include bp(md){
+            font-size: 1.6rem;
+        }
+
+        &__item{
+            margin: 0 2.25rem;
+
+            @include bp(xxxl){
+                margin: 0 1.5rem;
+            }
+
+            @include bp(lg){
+                margin:  0 0 2rem;
+            }
+
+        }
+
+        &__link{
+            font-weight: bold;
+            display: inline-flex;
+            border-bottom: 3px solid transparent;
+            padding: 0.6rem 0;
+
+            &.active{
+                border-color: $orange;
+            }
+
+            @include bp(lg){
+                border: none;
+                padding: 0;
+                display: block;
+                font-weight: 400;
+
+                &.active{
+                    font-weight: bold;
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+.slogan{
+    font-size: 2rem;
+    margin: 0.1rem auto 0 3.4rem;
+
+    @include bp(xl){
+        margin-left: 2rem;
+        font-size: 1.5rem;
+    }
+
+    @include bp(md){
+        font-size: 1.2rem;
+        line-height: 130%;
+    }
+}
+
+.btn-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    flex-shrink: 0;
+    width: 5.7rem;
+    height: 5.7rem;
+    border-radius: 50%;
+    margin-left: 3rem;
+
+    &__item{
+        display: block;
+        width: 2.5rem;
+        height: 0.3rem;
+        border-radius: 0.5rem;
+        background: #fff;
+        transition: all 0.3s ease-out;
+    }
+    &__item+&__item{
+        margin-top: 0.6rem;
+    }
+    &:hover{
+        .btn-menu__item{
+
+        }
+    }
+}
+
+.social-list{
+    margin:  0 -0.1rem 0 0.5rem;
+
+    &__item{
+        margin-left: 1.6rem;
+        width: 4.4rem;
+        height: 4.5rem;
+
+        @include bp(hv){
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+}
