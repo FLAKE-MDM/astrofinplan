@@ -1,7 +1,7 @@
 a{
     transition: all 0.3s ease-out;
     text-decoration: none;
-    color: $dark;
+    color: $black;
 
     @include bp(hv){
         &:hover{
@@ -36,12 +36,10 @@ p{
     line-height: none;
     font-size: 4.8rem;
     font-family: Verdana, sans-serif;
-    margin: 0 0.3rem;
 
     @include bp(md){
         font-size: 2.6rem;
         line-height: 130%;
-        margin: 0;
     }
 
     @include bp(sm){
@@ -57,7 +55,17 @@ p{
             
         }
         &-md{
-            
+            font-size: 3.2rem;
+            line-height: 100%;
+
+            @include bp(md){
+                font-size: 2.6rem;//.form-block .title
+                line-height: 120%;
+            }
+
+            @include bp(sm){
+                font-size: 1.6rem;//.form-block .title
+            }
         }
         &-lg{
             
@@ -90,16 +98,21 @@ p{
             font-size: 2rem;
             line-height: normal;
 
-            // @include bp(md){
-            //     font-size: 1.6rem;
-            //     line-height: 120%;
-            // }
+            @include bp(md){
+                font-size: 1.4rem;
+                line-height: 120%;
+            }
         }
         &-lg{
-            
+            font-size: 3rem;
+            line-height: normal;
         }
         &-xl{
             
+        }
+
+        &_styling{
+            font-family: Verdana, Arial, sans-serif;
         }
     }
     // colors
@@ -122,6 +135,12 @@ p{
         font-weight: 700;
     }
     // alignment
+    &_left{
+        text-align: left!important;
+    }
+    &_right{
+        text-align: right!important;
+    }
     &_center{
         text-align: center;
 
@@ -131,17 +150,17 @@ p{
             }
         }
 
-        &_sm{
-            @include bp(sm){
-                text-align: center;
+        &_md{
+            @include bp(md){
+                text-align: center!important;
             }
         }
-    }
-    &_left{
-        text-align: left!important;
-    }
-    &_right{
-        text-align: right!important;
+
+        &_sm{
+            @include bp(sm){
+                text-align: center!important;
+            }
+        }
     }
 }
 

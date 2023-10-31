@@ -22,6 +22,10 @@
   flex-direction: column;
 }
 
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
 .d{
   &-block{
     display: block;
@@ -171,6 +175,10 @@
 }
 
 .grid{
+  &-md{
+    grid-gap: 4rem;
+  }
+
   &-2{
     grid-template-columns: repeat(2, 1fr);
   }
@@ -287,11 +295,11 @@
 
 .mt{
   &-md{
-    margin-top: 4rem;
+    // margin-top: 4rem;
   }
 
   &-xl{
-    margin-top: 7.5rem;
+    // margin-top: 7.5rem;
   }
 }
 
@@ -300,28 +308,60 @@
     margin-bottom: 0;
   }
 
-  &-xs{
-    margin-bottom: 0.5rem;
-  }
-
-  &-sm{
-    margin-bottom: 1.5rem;
-  }
-
-  &-md{
-    margin-bottom: 4.5rem;
-  }
-
-  &-lg{
-    margin-bottom: 6.2rem;
-
-    @include bp(sm){
-      margin-bottom: 4.3rem;
+  &-tablet-0{
+    @include bp(md){
+      margin-bottom: 0 !important;
     }
   }
 
+  &-xs{
+    margin-bottom: 1.5rem;
+
+    @include bp(sm){
+      margin-bottom: 1rem;//form-block
+    }
+  }
+
+  &-sm{
+    margin-bottom: 3rem;
+
+    @include bp(md){
+      margin-bottom: 2.1rem;
+    }
+
+    @include bp(sm){
+      margin-bottom: 1.4rem;
+    }
+  }
+
+  &-md{
+    margin-bottom: 4rem;
+
+    @include bp(md){
+      margin-bottom: 1.9rem;
+    }
+  }
+
+  &-lg{
+    margin-bottom: 5rem;
+  }
+
   &-xl{
-    margin-bottom: 7.5rem;
+    margin-bottom: 7rem;
+
+    @include bp(md){
+      margin-bottom: 2.9rem;//form-section__content title
+    }
+
+    @include bp(sm){
+        margin-bottom: 1.6rem;//form-section__content title
+    }
+  }
+
+  &-xxl{
+    margin-bottom: 8rem;
+
+
   }
 }
 
@@ -341,5 +381,19 @@
       @include bp(sm){
           width: 100%;
       }
+  }
+}
+
+.order{
+  &-md-2{
+    @include bp(md-up){
+      order: 2;
+    }
+  }
+
+  &-lg-2{
+    @include bp(lg-up){
+      order: 2;
+    }
   }
 }

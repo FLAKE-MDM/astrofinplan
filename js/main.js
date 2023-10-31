@@ -112,14 +112,14 @@ window.addEventListener('resize', checkResolution);
 
 
 
-// home
-new Swiper(".project-slider", {
+// about
+new Swiper(".certificate-slider", {
   slidesPerView: 1,
   spaceBetween: 20,
   loop: true,
   breakpoints: {
     768: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
   },
   pagination: {
@@ -127,10 +127,12 @@ new Swiper(".project-slider", {
     clickable: true,
   },
   navigation: {
-    nextEl: ".review-next",
-    prevEl: ".review-prev",
+    nextEl: ".certificate-next",
+    prevEl: ".certificate-prev",
   },
 });
+
+
 
 
 // new Swiper(".preview-slider", {

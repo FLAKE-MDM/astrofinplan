@@ -102,6 +102,18 @@ body{
     }
 }
 
+.section{
+    margin-top: 13rem;
+
+    @include bp(md){
+      margin-top: 8.2rem;
+    }
+
+    @include bp(sm){
+        margin-top: 7.1rem;
+    }
+}
+
 .zoom-link{
     display: block;
     overflow: hidden;
@@ -136,7 +148,12 @@ body{
     &_primary{
 
     }
+
+    &_light{
+        background: $light;
+    }
 }
+
 .w-100{
     width: 100%!important;
     &_lg{
@@ -155,45 +172,63 @@ body{
         }
     }
 }
-.row{
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-    @include bp(sm){
 
-    }
-    & > *{
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        @include bp(sm){
-
-        }
-    }
-}
 
 
 // swiper
 .swiper{
     &-pagination{
-        &-bullet{
-            width: 0.6rem;
-            height: 0.6rem;
-            margin: 0 0.4rem;
-            opacity: 1;
-            &:hover, &-active{
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
+        &-bullet{
+            width: 1.5rem;
+            height: 1.5rem;
+            margin: 0 0.5rem;
+            opacity: 1;
+            background: $orange;
+            opacity: 0.5;
+            transition: all 0.3s ease-out;
+
+            &-active{
+                width: 2rem;
+                height: 2rem;
+                opacity: 1;
+            }
+
+            @include bp(hv){
+                &:hover{
+                    opacity: 1;
+                }
             }
         }
     }
 
-    .swiper-button-prev, .swiper-button-next{
-        width: 4rem;
-        height: 4rem;
+    &-button-prev, &-button-next{
+        width: 7.8rem;
+        height: 7.8rem;
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 50%;
         transition: all 0.3s ease-out;
         background: #F8FCFF;
+        margin: 0;
+        top: 27.5%;
+
+        @include bp(md){
+            top: 39.4%;
+            height: 5rem;
+            width: 5rem;
+        }
+
+        @include bp(sm){
+            top: 40.4%;
+            width: 3.8rem;
+            height: 3.8rem;
+        }
 
         @include bp(hv){
             &:hover{
@@ -204,6 +239,22 @@ body{
         &:after{
             display: none;
         }
+
+        @include bp(hv){
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+
+    &-button-prev{
+        background: url(../img/icons/prev.svg) 0 0 no-repeat;
+        background-size: contain;
+    }
+
+    &-button-next{
+        background: url(../img/icons/next.svg) 0 0 no-repeat;
+        background-size: contain;
     }
 }
 
@@ -262,12 +313,104 @@ body{
     }
 }
 
+// support
+.support{
+    position: fixed;
+    bottom: 2rem;
+    right: 5.9rem;
+    z-index: 5;
+
+    @include bp(md){
+      right: 3.5rem;
+    }
+
+    @include bp(sm){
+        right: 1.5rem;
+    }
+
+    &__dropdown-toggle{
+        width: 11.7rem;
+        height: 11.7rem;
+        border-radius: 50%;
+        background: url(../img/icons/support.svg) 0 0 no-repeat;
+        background-size: contain;
+        padding: 0;
+
+        @include bp(md){
+            width: 5.9rem;
+            height: 5.9rem;
+        }
+
+        @include bp(hv){
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+
+        &::after{
+            display: none;
+        }
+    }
+
+    &__dropdown-menu{
+        right: 0;
+        bottom: 100%;
+        top: auto;
+        min-width: 20.2rem;
+        margin-bottom: 2.7rem;
+        overflow: visible;
+
+        @include bp(sm){
+            min-width: 10rem;
+            border-radius: 2rem;
+        }
+
+        &:after{
+            content: '';
+            display: block;
+            width: 6.2rem;
+            height: 5.6rem;
+            background: url(../img/dropdown.png) 0 0 no-repeat;
+            background-size: contain;
+            right: 0;
+            bottom: -2.8rem;
+            position: absolute;
+        }
+    }
+
+    &-list{
+        &__item{
+            @include bp(sm){
+                width: 3rem;
+                height: 3rem;
+                position: relative;
+                z-index: 2;
+            }
+
+            &:not(:last-child){
+                margin-bottom: 1.8rem;
+
+                @include bp(sm){
+                    margin-bottom: 1rem;
+                }
+            }
+
+            @include bp(hv){
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
 
 @import 'form';
 @import 'header';
 @import 'home';
 @import 'footer';
 @import 'review';
+@import 'about';
 
 
 

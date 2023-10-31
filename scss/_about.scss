@@ -1,0 +1,593 @@
+.about{
+  &-section{
+    display: grid;
+    grid-template-columns: 35% auto;
+    grid-gap: 0 5.95%;
+    margin: 3.8rem 0;
+
+    @include bp(md){
+      grid-gap: 0 1.4rem;
+      grid-template-columns: 41.4% auto;
+      margin: 2.1rem 0;
+    }
+
+    @include bp(sm){
+      grid-template-columns: 100%;
+    }
+
+    &__content{
+      padding-top: 3.4rem;
+
+      @include bp(xl){
+        align-self: center;
+      }
+
+      @include bp(md){
+        font-size: 1.8rem;
+        font-family: 'PT Sans', Arial, sans-serif;
+        padding-top: 4.9rem;
+        line-height: 120%;
+      }
+
+      @include bp(sm){
+        padding: 0.4rem 0 0;
+        font-size: 1.6rem;
+      }
+    }
+
+    &__image{
+      padding-left: 0.2rem;
+      grid-row: span 2;
+
+      @include bp(xl){
+        grid-row: span 1;
+      }
+
+      @include bp(md){
+        padding-left: 4.1rem;
+      }
+
+      @include bp(sm){
+        padding-left: 0.7rem;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    &__text{
+      position: relative;
+      padding-left: 12.7rem;
+      margin-top: 3rem;
+
+      @include bp(xl){
+        grid-column: span 2;
+      }
+
+      @include bp(md){
+        margin-top: 1.9rem;
+        padding-left: 6.4rem;
+      }
+
+      @include bp(sm){
+        margin-top: -0.5rem;
+        padding-left: 3.5rem;
+        grid-column: span 1;
+      }
+
+      &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        background: $primary;
+        width: 7rem;
+        border-radius: 1.5rem;
+        left: 0;
+        top: 0;
+        bottom: 2rem;
+
+        @include bp(md){
+          width: 4.4rem;
+          border-radius: 1rem;
+          bottom: 1.7rem;
+        }
+
+        @include bp(sm){
+          width: 2rem;
+          border-radius: 0.5rem;
+          bottom: 1.4rem;
+        }
+      }
+
+      p{
+        @include bp(md){
+          margin-bottom: 1.5rem;
+        }
+
+        @include bp(sm){
+          margin-bottom: 1.4rem;
+        }
+      }
+    }
+  }
+
+  &-block{
+    position: relative;
+    border-radius: 4rem;
+    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
+    padding: 5rem 5rem 4.1rem;
+    width: 113.5rem;
+    max-width: 100%;
+    margin: 9.9rem 0.1rem 31rem;
+
+    @include bp(xl){
+      max-width: 70%;
+    }
+
+    @include bp(md){
+      max-width: 100%;
+      padding: 2.5rem 2.5rem 1.4rem;
+      border-radius: 2rem;
+      margin: 10.1rem 0 10.5rem;
+    }
+
+    @include bp(sm){
+      margin: 7rem 0 12.7rem;
+      padding: 2.5rem 0.5rem 1.4rem;
+    }
+
+    &__title{
+      margin-bottom: 3.3rem;
+
+      @include bp(md){
+        font-size: 1.8rem;
+        line-height: 120%;
+        font-family: 'PT Sans', Arial, sans-serif;
+        margin-bottom: 1rem;
+      }
+
+      @include bp(sm){
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__image{
+      position: absolute;
+      width: 57.7rem;
+      top: 0;
+      left: 79.8%;
+
+      @include bp(md){
+        left: auto;
+        right: 0.1rem;
+        width: 20.6rem;
+        top: 6.4rem;
+      }
+
+      @include bp(sm){
+        width: 12.4rem;
+        top: 80%;
+        right: -0.1rem;
+      }
+    }
+
+    p{
+      margin-bottom: 0.8rem;
+
+      @include bp(md){
+        margin: 0 0.5rem 1rem 0;
+      }
+
+      @include bp(sm){
+        margin: 0 0 1.5rem;
+      }
+    }
+
+    .link_underline{
+      @include bp(md){
+        color: $primary;
+      }
+    }
+  }
+}
+
+.advantages{
+  &-group{
+    gap: 3rem 2rem;
+    padding-top: 0.3rem;
+    margin-bottom: 3rem;
+
+    @include bp(md){
+      padding-top: 1.6rem;
+      gap: 6.7rem 2rem;
+    }
+
+    @include bp(sm){
+      padding-top: 0.8rem;
+      gap: 6.2rem 2rem;
+      margin-bottom: 3.6rem;
+    }
+  }
+
+  &-item{
+    width: calc((100% - 4rem) / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.6rem;
+    border-radius: 2rem;
+    background: #FFF;
+    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
+    min-height: 22.3rem;
+    padding: 0 5rem 2rem 3rem;
+    position: relative;
+    border-left: 1.9rem solid $primary;
+    z-index: 1;
+    margin-top: 7.8rem;
+
+    @include bp(md){
+      width: calc((100% - 2rem) / 2);
+      margin-top: 0;
+      border-width: 2.2rem;
+      min-height: 13.6rem;
+      padding: 0 3rem 0.5rem;
+    }
+
+    @include bp(sm){
+      width: 100%;
+      padding-left: 3rem;
+      padding-right: 2rem;
+    }
+
+    &_light{
+      border-color: #A7EEEE;
+    }
+
+    &_medium{
+      border-left-color: #46B6B6;
+    }
+
+    &_danger{
+      border-left-color: #FF6F4F;
+    }
+
+    &:before{
+      content: '';
+      display: block;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-radius: 0 2rem 2rem 0;
+
+
+    }
+
+    &__icon{
+      width: 12rem;
+      height: 12rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: -6rem 0 2.5rem;
+
+      @include bp(md){
+        width: 7.5rem;
+        height: 7.5rem;
+        padding: 1.6rem;
+        margin-top: -4.6rem;
+        margin-left: -2rem;
+      }
+    }
+  }
+}
+
+// education
+
+.certificate{
+  &-slider{
+    margin: 0 2% 0 4.1%;
+
+    @include bp(md){
+      margin: 0 7%;
+    }
+
+    @include bp(sm){
+      font-size: 1.6rem;
+      margin: 0 14%;
+    }
+
+    &-wrap{
+      margin: 0 -1.5rem;
+    }
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 30rem;
+      margin-bottom: 3rem;
+
+      @include bp(md){
+        min-height: 17.5rem;
+        margin-bottom: 1rem;
+      }
+
+      @include bp(sm){
+        min-height: 12rem;
+        margin-bottom: 1.4rem;
+      }
+
+      img{
+        @include bp(md){
+          max-height: 17.5rem;
+        }
+
+        @include bp(sm){
+          max-height: 12rem;
+        }
+      }
+    }
+
+    p{
+      @include bp(sm){
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+.education{
+  &-row {
+    display: grid;
+    grid-template-columns: 46.6% auto;
+    grid-gap: 2.1rem;
+    margin-top: 5.2rem;
+    padding-bottom: 2rem;
+
+    @include bp(md){
+      margin-top: 4.6rem;
+      grid-template-columns: 100%;
+    }
+
+    @include bp(sm){
+      margin-top: 2rem;
+    }
+  }
+
+  &-block {
+    border-radius: 4rem;
+    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
+    padding: 5rem 5rem 3.9rem;
+    margin-top: 3.4rem;
+    align-self: flex-start;
+
+    @include bp(md){
+      padding: 3rem 2.9rem 1.9rem;
+      border-radius: 2rem;
+    }
+
+    @include bp(sm){
+      padding: 2rem 2rem 0.7rem;
+    }
+
+    p{
+      @include bp(md){
+        margin-bottom: 1.5rem;
+      }
+
+      @include bp(sm){
+        margin-bottom: 1.4rem;
+      }
+    }
+  }
+
+  &-image{
+    display: flex;
+    justify-content: center;
+
+    @include bp(md){
+      margin: 0 auto;
+      width: 43.1rem;
+      max-width: 100%;
+    }
+  }
+}
+
+// form
+.form{
+  &-section {
+    border-radius: 4rem;
+    background: #FFF;
+    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: auto 56.2%;
+    grid-gap: 2rem;
+
+    @include bp(xxl){
+      grid-template-columns: auto 53%;
+    }
+
+    @include bp(lg){
+      grid-template-columns: 100%;
+    }
+
+    @include bp(md){
+      padding: 2.9rem 5.8rem 3rem;
+      grid-gap: 1.4rem;
+      border-radius: 2rem;
+    }
+
+    @include bp(sm){
+      margin-top: 5.2rem;
+      padding: 2.1rem 2rem 2.7rem;
+    }
+
+    &:before{
+      content: '';
+      display: block;
+      left: -50%;
+      right: -50%;
+      height: 13.4rem;
+      background: $light;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      position: absolute;
+    }
+
+		&__content {
+      padding-top: 1.7rem;
+
+      @include bp(lg){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+
+      @include bp(md){
+        padding: 0;
+      }
+
+      @include bp(sm){
+        font-weight: normal;
+        margin: 0 -1rem;
+      }
+
+      &>p{
+        @include bp(sm){
+          font-size: 1.6rem;
+        }
+      }
+
+      p{
+        @include bp(md){
+          margin-bottom: 1.5rem;
+        }
+
+        @include bp(sm){
+          margin-bottom: 1rem;
+        }
+      }
+
+      .text_primary{
+        @include bp(sm){
+          margin-top: 0.5rem;
+        }
+      }
+
+      .text_size_styling{
+         @include bp(md){
+          font-family: 'PT Sans', Arial, sans-serif;
+        }
+
+        @include bp(sm){
+          font-family: Verdana, Arial, sans-serif;
+        }
+      }
+		}
+
+    &__social-list{
+      margin: 0.2rem 1.5rem 0 0;
+
+      @include bp(md){
+        margin: 0.3rem 1rem 0 -5.5rem;
+      }
+
+      @include bp(sm){
+        margin: 0.3rem 0 0 -0.3rem;
+      }
+
+      .social-list__item{
+        margin: 0 1rem 0 0;
+        width: 4.8rem;
+        height: 4.8rem;
+
+        @include bp(md){
+          width: 4.4rem;
+          height: 4.4rem;
+
+          &.icon-whatsapp-circle-nav{
+            background-image: url(../img/icons/whatsapp-circle.svg);
+          }
+        }
+      }
+    }
+  }
+
+  &-block {
+    padding: 5.4rem 8rem 5rem;
+    border-radius: 3rem;
+    background: linear-gradient(0deg, #028584 0%, #03ABAA 100%);
+
+    @include bp(xxl){
+      padding: 5rem;
+    }
+
+    @include bp(md){
+      border-radius: 1.4rem;
+      padding: 3rem 8.2rem 3.2rem;
+    }
+
+    @include bp(sm){
+      margin-top: 0.8rem;
+      padding: 2rem;
+    }
+
+    &__text{
+      @include bp(sm){
+        margin: 0 -1rem 0.1rem;
+        line-height: 110%;
+      }
+    }
+
+    .title{
+      @include bp(md){
+        text-transform: none;
+        margin-bottom: 1.7rem;
+      }
+
+      @include bp(sm){
+        margin-bottom: 2.4rem;
+      }
+    }
+
+    .btn{
+      @include bp(md){
+        margin-top: 0.8rem;
+        padding: 1.5rem 3.3rem;
+      }
+
+      @include bp(sm){
+        font-size: 1.4rem;
+        padding: 0.8rem 1.5rem;
+        margin-top: 1.9rem;
+      }
+    }
+
+    .text_size-sm{
+      @include bp(md){
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+

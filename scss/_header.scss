@@ -118,6 +118,7 @@
             display: inline-flex;
             border-bottom: 3px solid transparent;
             padding: 0.6rem 0;
+            color: $dark;
 
             &.active{
                 border-color: $orange;
