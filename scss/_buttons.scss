@@ -160,6 +160,14 @@
             }
         }
     }
+
+    &_large{
+        min-width: 40rem;
+
+        @include bp(md){
+            min-width: 1rem;
+        }
+    }
 }
 
 

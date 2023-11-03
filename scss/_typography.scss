@@ -8,15 +8,23 @@ a{
             color: $primary;
         }
     }
+
+    &.text_primary{
+        @include bp(hv){
+            &:hover{
+                color: $orange;
+            }
+        }
+    }
 }
 
 .link_underline{
     text-decoration: underline;
-    @include bp(hv){
-        &:hover{
-            text-decoration: none;
-        }
-    }
+    // @include bp(hv){
+    //     &:hover{
+    //         text-decoration: none;
+    //     }
+    // }
 
     // display: inline-block;
     // padding-bottom: 0.8rem;
@@ -46,13 +54,14 @@ p{
         font-size: 2.2rem;
         line-height: 120%;
     }
-    
+
     &_size{
         &-xs{
-            
+
         }
         &-sm{
-            
+            font-size: 2.6rem;
+            line-height: normal;
         }
         &-md{
             font-size: 3.2rem;
@@ -68,10 +77,24 @@ p{
             }
         }
         &-lg{
-            
+            font-size: 7rem;
+            line-height: 120%;
+
+            @include bp(lg){
+                font-size: 5rem;
+            }
+
+            @include bp(md){
+                font-size: 3.2rem;
+            }
+
+            @include bp(sm){
+                font-size: 2.4rem;
+                letter-spacing: 0.024rem;
+            }
         }
         &-xl{
-            
+
         }
     }
 
@@ -110,10 +133,9 @@ p{
         &-xl{
             
         }
-
-        &_styling{
-            font-family: Verdana, Arial, sans-serif;
-        }
+    }
+    &_styling{
+        font-family: Verdana, Arial, sans-serif;
     }
     // colors
     &_primary{
@@ -122,6 +144,10 @@ p{
 
     &_inversion{
         color: #fff;
+    }
+
+    &_dark{
+        color: $dark;
     }
 
     // weight

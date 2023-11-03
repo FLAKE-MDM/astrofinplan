@@ -108,23 +108,46 @@
     width: 5.7rem;
     height: 5.9rem;
     background-image: url(../img/icons/whatsapp-support.svg);
+
+    @include bp(md){
+      width: 4.2rem;
+      height: 4.2rem;
+    }
 }
 
 .icon-tg-support{
     width: 5.9rem;
     height: 5.9rem;
     background-image: url(../img/icons/tg-support.svg);
+
+    @include bp(md){
+      width: 4.1rem;
+      height: 4.1rem;
+    }
 }
 
 .icon-vk-support{
     width: 6.9rem;
     height: 6.9rem;
     background-image: url(../img/icons/vk-support.svg);
+
+    @include bp(md){
+      width: 5rem;
+      height: 5rem;
+    }
 }
 
+.icon-caret{
+    width: 1.5rem;
+    height: 2rem;
+    background-image: url(../img/icons/caret.svg);
+}
 
-
-
+.icon-close{
+    width: 3.4rem;
+    height: 3.4rem;
+    background-image: url(../img/icons/close.svg);
+}
 
 
 

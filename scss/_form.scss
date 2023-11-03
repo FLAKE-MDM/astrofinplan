@@ -9,6 +9,14 @@
         @include bp(sm){
             margin-bottom: 1rem;
         }
+
+        &_sm{
+            margin-bottom: 2.1rem;
+
+            @include bp(md){
+                margin-bottom: 1.3rem;
+            }
+        }
     }
 
     &-control{
@@ -34,6 +42,16 @@
             padding: 0.9rem 2rem;
         }
 
+        &_dark{
+            border-radius: 0.8rem;
+            background: #E8E8E8;
+            border-color: #E8E8E8;
+
+            @include bp(sm){
+                border-radius: 0.5rem;
+            }
+        }
+
         &.has-error{
             border-color: $danger;
             &::-webkit-input-placeholder{color:$danger!important}
@@ -49,28 +67,22 @@
         &:focus{
 
         }
-        &_date{
-            background: url(../img/icons/calendar.svg) 94% 50% no-repeat;
-            background-size: 15px 16px;
-            @include bp(sm){
-                background-position: 94% 50%;
-            }
-        }
-        &_xs{
-            text-align: center;
-            width: 4.4rem;
-            padding: 1.3rem 1rem;
-            @include bp(sm){
-                width: 4.6rem;
-            }
-        }
-        &_lg{
-            padding: 2.3rem 2.4rem;
-            font-size: 1.6rem;
-            @include bp(sm){
-                padding: 2.2rem 2.3rem;
-            }
-        }
+
+        // &_xs{
+        //     text-align: center;
+        //     width: 4.4rem;
+        //     padding: 1.3rem 1rem;
+        //     @include bp(sm){
+        //         width: 4.6rem;
+        //     }
+        // }
+        // &_lg{
+        //     padding: 2.3rem 2.4rem;
+        //     font-size: 1.6rem;
+        //     @include bp(sm){
+        //         padding: 2.2rem 2.3rem;
+        //     }
+        // }
     }
     &-check-input{
         flex-shrink: 0;

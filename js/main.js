@@ -103,7 +103,15 @@ $(".modal").mousedown(function(e){
 // checkResolution
 function checkResolution() {
   if (window.innerWidth < 768) {
-
+    new Swiper(".step-slider", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
   }
 }
 

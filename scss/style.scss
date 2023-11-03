@@ -112,6 +112,57 @@ body{
     @include bp(sm){
         margin-top: 7.1rem;
     }
+
+    &_before{
+        position: relative;
+
+        &:before, &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 100%;
+            margin: 0 auto;
+            background: $primary;
+          }
+
+          &:before{
+            width: 0.4rem;
+            height: 11.5rem;
+            border-radius: 0.5rem;
+            left: 0.35rem;
+
+            @include bp(md){
+                width: 0.2rem;
+                height: 7.1rem;
+                right: 0.3rem;
+            }
+
+            @include bp(sm){
+                height: 5.5rem;
+                margin-bottom: 1rem;
+            }
+          }
+
+          &:after{
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            left: 0.3rem;
+            margin-bottom: -0.2rem;
+
+            @include bp(md){
+                width: 1rem;
+                height: 1rem;
+                margin-bottom: -0.9rem;
+                left: 0;
+            }
+
+            @include bp(sm){
+                margin-bottom: 0.5rem;
+            }
+          }
+    }
 }
 
 .zoom-link{
@@ -150,7 +201,7 @@ body{
     }
 
     &_light{
-        background: $light;
+        background: $light!important;
     }
 }
 
@@ -256,6 +307,30 @@ body{
         background: url(../img/icons/next.svg) 0 0 no-repeat;
         background-size: contain;
     }
+
+    &-arrows{
+        margin: -0.1rem 0 1rem;
+
+        .swiper-button-prev, .swiper-button-next{
+            position: static;
+            margin-left: 1.5rem;
+        }
+    }
+
+    &-button_dark{
+        width: 3.2rem;
+        height: 3.2rem;
+
+        &.swiper-button-prev{
+            background: $primary url(../img/icons/caret-prev.svg) 50% 50% no-repeat;
+            background-size: 1.6rem 1.5rem;
+        }
+
+        &.swiper-button-next{
+            background: $primary url(../img/icons/caret-next.svg) 50% 50% no-repeat;
+            background-size: 1.6rem 1.5rem;
+        }
+    }
 }
 
 // breadcrumb
@@ -322,6 +397,8 @@ body{
 
     @include bp(md){
       right: 3.5rem;
+      flex-direction: column;
+      align-items: flex-end;
     }
 
     @include bp(sm){
@@ -360,9 +437,11 @@ body{
         margin-bottom: 2.7rem;
         overflow: visible;
 
-        @include bp(sm){
-            min-width: 10rem;
-            border-radius: 2rem;
+        @include bp(md){
+            min-width: 9.1rem;
+            border-radius: 3rem;
+            padding-bottom: 2.3rem;
+            margin-bottom: 1.5rem;
         }
 
         &:after{
@@ -375,23 +454,26 @@ body{
             right: 0;
             bottom: -2.8rem;
             position: absolute;
+
+            @include bp(md){
+                width: 5.2rem;
+                right: -0.7rem;
+                bottom: -2.6rem;
+                transform: rotate(-14deg);
+            }
         }
     }
 
     &-list{
         &__item{
-            @include bp(sm){
-                width: 3rem;
-                height: 3rem;
-                position: relative;
-                z-index: 2;
-            }
+            position: relative;
+            z-index: 2;
 
             &:not(:last-child){
                 margin-bottom: 1.8rem;
 
-                @include bp(sm){
-                    margin-bottom: 1rem;
+                @include bp(md){
+                    margin-bottom: 1.5rem;
                 }
             }
 
@@ -407,10 +489,10 @@ body{
 
 @import 'form';
 @import 'header';
-@import 'home';
 @import 'footer';
 @import 'review';
 @import 'about';
+@import 'home';
 
 
 
