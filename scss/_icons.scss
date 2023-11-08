@@ -149,10 +149,57 @@
     background-image: url(../img/icons/close.svg);
 }
 
+.icon-pagination-next{
+    width: 2.4rem;
+    height: 2.4rem;
 
+    &:before{
+        background-image: url(../img/icons/pagination-next.svg);
+    }
 
+    &:after{
+        background-image: url(../img/icons/pagination-next-active.svg);
+    }
+}
 
+.icon-pagination-end{
+    width: 2.4rem;
+    height: 2.4rem;
 
+    &:before{
+        background-image: url(../img/icons/pagination-end.svg);
+    }
+
+    &:after{
+        background-image: url(../img/icons/pagination-end-active.svg);
+    }
+}
+
+.icon-pagination-prev{
+    width: 2.4rem;
+    height: 2.4rem;
+
+    &:before{
+        background-image: url(../img/icons/pagination-prev.svg);
+    }
+
+    &:after{
+        background-image: url(../img/icons/pagination-prev-active.svg);
+    }
+}
+
+.icon-pagination-start{
+    width: 2.4rem;
+    height: 2.4rem;
+
+    &:before{
+        background-image: url(../img/icons/pagination-start.svg);
+    }
+
+    &:after{
+        background-image: url(../img/icons/pagination-start-active.svg);
+    }
+}
 
 
 

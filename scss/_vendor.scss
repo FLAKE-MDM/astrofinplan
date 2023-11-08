@@ -346,7 +346,8 @@
 .open .dropdown-menu {
   display: block;
 }
-.dropdown-toggle{
+
+.dropdown__toggle{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -356,21 +357,20 @@
   &::after{
     content: "";
     display: inline-block;
-    width: 1.2rem;
-    height: 0.8rem;
-    top: 0.5rem;
+    width: 2.4rem;
+    height: 2.4rem;
     right: 0;
-    background: url(../img/icons/caret.svg) no-repeat;
+    background: url(../img/icons/caret-down.svg) no-repeat;
     background-size: contain;
     transition: all 0.3s ease-out;
     position: absolute;
     bottom: 0;
     margin: auto;
+    top: -0.5rem;
   }
 
   &.active{
     &::after{
-      top: -0.4rem;
       transform: rotate(180deg);
     }
   }

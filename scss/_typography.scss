@@ -55,6 +55,16 @@ p{
         line-height: 120%;
     }
 
+    &_heading{
+        @include bp(md){
+            margin: 0.9rem 0 2.8rem;
+        }
+
+        @include bp(sm){
+            margin: 0 0 1.9rem;
+        }
+    }
+
     &_size{
         &-xs{
 
@@ -106,7 +116,8 @@ p{
     // size
     &_size{
         &-xs{
-            
+            font-size: 1.2rem;
+            line-height: normal;
         }
         &-sm{
             font-size: 1.6rem;
@@ -166,6 +177,12 @@ p{
     }
     &_right{
         text-align: right!important;
+
+        &-sm{
+            @include bp(sm){
+                text-align: right!important;
+            }
+        }
     }
     &_center{
         text-align: center;

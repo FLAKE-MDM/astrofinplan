@@ -1,0 +1,386 @@
+// aside
+.aside{
+  width: 24%;
+  margin-left: 2rem;
+  flex-shrink: 0;
+  padding: 5rem 3rem 4.4rem;
+  border-radius: 4rem;
+  margin-top: 0.3rem;
+  align-self: flex-start;
+  position: relative;
+
+  @include bp(xl){
+    padding: 3rem 2rem 2.5rem;
+    border-radius: 2rem;
+  }
+
+  @include bp(md){
+    width: 31.1%;
+    margin-top: 0;
+    margin-right: 0.2rem;
+  }
+
+  @include bp(sm){
+    width: 100%;
+    margin: 0 0 3rem;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem 0.1rem;
+  }
+
+  &_margin{
+    margin-top: 3.6rem;
+
+    @include bp(md){
+      margin-top: 3.3rem;
+    }
+
+    @include bp(sm){
+      margin-top: 0;
+    }
+  }
+
+  &-item {
+    &:not(:last-child){
+      margin-bottom: 4.6rem;
+
+      @include bp(md){
+        margin-bottom: 3.4rem;
+      }
+
+      @include bp(sm){
+        margin-bottom: -0.2rem;
+      }
+    }
+
+    &_padding{
+      padding-top: 0.6rem;
+
+      @include bp(sm){
+        padding: 0;
+      }
+    }
+  }
+
+  &-title {
+    margin-bottom: 2.1rem;
+    display: inline-flex;
+
+    @include bp(md-up){
+      pointer-events: none;
+      padding: 0;
+
+      &::after{
+        display: none;
+      }
+    }
+
+    @include bp(lg){
+      font-family: 'PT Sans', Arial, sans-serif;
+    }
+
+    @include bp(md){
+      font-size: 1.8rem;
+      line-height: 120%;
+      margin-bottom: 2rem;
+    }
+
+    @include bp(sm){
+      display: block;
+      font-size: 1.6rem;
+      margin-bottom: 1.7rem;
+    }
+
+    &_md{
+      margin-bottom: 2.5rem;
+
+      @include bp(md){
+        margin-bottom: 2rem;
+      }
+
+      @include bp(sm){
+        margin-bottom: 1.7rem;
+      }
+    }
+  }
+
+  &-nav {
+    @include bp(md){
+      font-size: 1.6rem;
+      line-height: 120%;
+    }
+
+    @include bp(sm){
+      margin-bottom: 1.3rem;
+    }
+
+    &_md{
+      .aside-nav__item {
+        &:not(:last-child){
+          margin-bottom: 0.45rem;
+
+          @include bp(md){
+            margin-bottom: 1rem;
+          }
+
+          @include bp(sm){
+            margin-bottom: 0.9rem;
+          }
+        }
+      }
+    }
+
+    &__item {
+      &:not(:last-child){
+        margin-bottom: 0.7rem;
+
+        @include bp(md){
+          margin-bottom: 1rem;
+        }
+
+        @include bp(sm){
+          margin-bottom: 0.85rem;
+        }
+      }
+    }
+
+    &__link {
+      display: inline-flex;
+      border-bottom: 3px solid transparent;
+      padding-bottom: 0.2rem;
+      color: $dark;
+
+      &.active{
+        border-color: $orange;
+      }
+    }
+  }
+
+  &-tags{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 1rem 2.1rem;
+
+    @include bp(md){
+      grid-gap: 1.6rem 2.1rem;
+    }
+
+    @include bp(sm){
+      grid-gap: 1.3rem 2.2rem;
+      padding-bottom: 1.8rem;
+    }
+  }
+
+  &-tag{
+    color: $dark;
+  }
+}
+
+// main
+.main{
+  flex-grow: 1;
+}
+
+.article{
+  display: grid;
+  grid-template-columns: 27.2% auto;
+  grid-gap: 0 1.2rem;
+  margin-bottom: 5rem;
+  padding: 4rem 4.5rem 3rem;
+  border-radius: 4rem;
+  height: 39.9rem;
+  grid-template-rows: auto 1fr;
+
+  @include bp(lg){
+    padding: 3rem 2rem;
+    margin-bottom: 3.7rem;
+    border-radius: 2rem;
+    height: 32rem;
+  }
+
+  @include bp(md){
+    grid-template-columns: 38.6% auto;
+    padding: 2rem 1.5rem 2rem 0.6rem;
+    height: 27.9rem;
+    grid-gap: 0 0.9rem;
+  }
+
+  @include bp(sm){
+    grid-template-columns: 10.2rem auto;
+    padding: 2rem;
+    height: 28.2rem;
+    margin-bottom: 3rem;
+    grid-gap: 0 1rem;
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+    grid-row: span 2;
+    padding: 0 0 1.2rem 0.6rem;
+
+    @include bp(md){
+      padding: 3.1rem 0 0;
+    }
+
+    @include bp(sm){
+      grid-row: span 1;
+      margin-top: -0.2rem;
+      padding: 0;
+    }
+  }
+
+  &__content {
+    @include bp(sm){
+      margin-right: -1rem;
+    }
+  }
+
+  &__category {
+    margin-left: 0.3rem;
+
+    @include bp(lg){
+      font-family: 'PT Sans', Arial, sans-serif;
+      margin: 0;
+    }
+  }
+
+  &__title{
+    margin: 2.3rem 1.5rem 3rem 0;
+    line-height: normal;
+
+    @include bp(lg){
+      line-height: 120%;
+      font-size: 1.8rem;
+      font-family: 'PT Sans', Arial, sans-serif;
+      margin: 2.1rem 0 1.4rem;
+    }
+
+    @include bp(sm){
+      margin-top: 1.6rem;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+
+    @include bp(lg){
+      font-size: 1.6rem;
+      line-height: 120%;
+    }
+
+    @include bp(sm){
+      grid-column: span 2;
+      font-size: 1.4rem;
+      margin-top: 0.9rem;
+    }
+
+    p{
+      margin-bottom: 1rem;
+    }
+	}
+
+  &__body{
+    overflow: hidden;
+    flex-grow: 1;
+    margin-bottom: auto;
+    max-height: 16.6rem;
+
+    @include bp(xl){
+      max-height: 12rem;
+      overflow: hidden;
+    }
+
+    @include bp(md){
+      max-height: 12.4rem;
+    }
+
+    @include bp(sm){
+      max-height: 9.5rem;
+    }
+  }
+
+  &__link{
+    @include bp(sm){
+      display: inline-flex;
+      font-size: 1.6rem;
+      margin-right: 0.7rem;
+    }
+  }
+}
+
+// category
+.category-title{
+  font-size: 3rem;
+  color: #878787;
+  margin-bottom: 5.8rem;
+
+  @include bp(md){
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 1.8rem;
+    margin: -1rem 0 1.9rem;
+  }
+
+  @include bp(sm){
+    font-size: 1.6rem;
+    margin-top: -0.5rem;
+  }
+}
+
+//article
+.article{
+  &-block{
+    display: grid;
+    grid-gap: 0 1.3rem;
+    grid-template-columns: 44% auto;
+  
+    @include bp(md){
+      grid-template-columns: 100%;
+    }
+  
+    &__image{
+      margin: -2.4rem 0 -1.7rem;
+  
+      @include bp(md){
+        margin: 4.8rem 2rem -0.1rem 0;
+        overflow: hidden;
+      }
+
+      @include bp(sm){
+        margin: -0.5rem 0 2rem;
+      }
+    }
+  
+    &__text{
+      padding-top: 3.5rem;
+  
+      @include bp(md){
+        padding: 0;
+      }
+    }
+  }
+
+  &-main{
+    p{
+      @include bp(md){
+        margin-bottom: 1.48rem;
+      }
+    }
+
+    .text_size-lg{
+      font-size: 1.8rem;
+      line-height: 120%;
+    }
+  }
+
+  &-title{
+    @include bp(md){
+      color: $dark;
+    }
+
+    @include bp(sm){
+      margin-top: -0.5rem;
+    }
+  }
+}

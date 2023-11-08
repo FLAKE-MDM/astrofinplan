@@ -335,55 +335,125 @@ body{
 
 // breadcrumb
 .breadcrumb{
-    margin: 3.2rem 0 1.4rem;
-    font-size: 1.2rem;
-    line-height: 2.8rem;
+    margin: 4rem 0.2rem 8rem;
+    font-size: 1.6rem;
+    line-height: normal;
     display: flex;
     flex-wrap: wrap;
     position: relative;
     z-index: 2;
+    color: $dark;
+    font-family: Verdana, Arial, sans-serif;
+
     @include bp(md){
-        font-size: 1rem;
-        line-height: 1.2rem;
-        margin: 1.7rem 0 0.5rem;
+        font-size: 1.2rem;
+        margin: 1.5rem 0 5.9rem;
     }
-    &__item{
-        margin-bottom: 1rem;
+
+    @include bp(sm){
+        margin: 1rem 0 3.6rem;
     }
-    &__item+&__item{
-        &:before{
-            content: '–';
-            color: #000;
+
+    &__item:not(:last-child){
+        &:after{
+            content: '>';
             display: inline-block;
-            margin: 0 0.7rem;
+            margin: 0 0.6rem;
+
             @include bp(md){
-                margin: 0 0.55rem;
+                margin: 0 0.5rem 0 4px;
             }
         }
+    }
+
+    &__link{
+        color: $dark;
     }
 }
 
 // pagination
 .pagination{
-    margin: 4rem 0 6rem;
-    font-size: 1.4rem;
-    line-height: 2rem;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+    padding-left: 3.5%;
+
     @include bp(md){
-        margin: 3.1rem 0 3.9rem;
+        font-size: 1.6rem;
+        padding: 0;
+        margin: 1.9rem 0 2.5rem;
     }
+
+    @include bp(sm){
+      font-size: 1.2rem;
+      margin: 3.8rem 0 2.2rem;
+      padding-right: 0.5rem;
+    }
+
     &__item{
-        margin: 0 0.9rem 1rem;
+        margin: 0 0.65rem;
+
+        @include bp(md){
+            margin: 0 0.5rem;
+        }
+
+        @include bp(sm){
+            margin: 0 0.4rem;
+        }
+
+        &_start{
+            margin-left: -0.7rem;
+        }
+
+        &_next{
+            margin: 0 0 0 0.8rem;
+
+            @include bp(md){
+                margin: 0 0.3rem 0 1.5rem;
+            }
+
+            @include bp(sm){
+                margin: 0 0.2rem 0 0.7rem;
+            }
+        }
+
+        &_end{
+            margin: 0;
+        }
     }
+
     &__link{
-        &_circle{
-            border: 1px solid #000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            width: 4.4rem;
-            height: 4.4rem;
-            margin: 0 0.9rem;
+        color: $primary;
+
+        &.active{
+            color: $orange;
+            font-size: 3.2rem;
+
+            @include bp(md){
+                font-size: 2rem;
+            }
+
+            @include bp(sm){
+                font-size: 1.8rem;
+            }
+        }
+
+        @include bp(hv){
+            &:hover{
+                color: $orange;
+            }
+        }
+    }
+
+    .icon{
+        margin-bottom: -0.2rem;
+
+        @include bp(md){
+            margin: 0.3rem 0 -0.5rem;
+        }
+
+        @include bp(sm){
+            width: 1.8rem;
+            height: 1.8rem;
         }
     }
 }
@@ -493,6 +563,7 @@ body{
 @import 'review';
 @import 'about';
 @import 'home';
+@import 'articles';
 
 
 
