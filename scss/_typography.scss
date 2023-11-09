@@ -3,8 +3,13 @@ a{
     text-decoration: none;
     color: $black;
 
-    &:active{
-        color: $primary;
+    &:not(.btn):active{
+        text-decoration: none !important;
+        color: $primary !important;
+        background-color: transparent !important;
+        outline: none !important;
+        -webkit-tap-highlight-color: transparent !important;
+        box-shadow: none!important;
     }
 
     @include bp(hv){
@@ -15,7 +20,7 @@ a{
 
     &.text_primary{
         &:active{
-            color: $orange;
+            color: $orange!important;
         }
 
         @include bp(hv){

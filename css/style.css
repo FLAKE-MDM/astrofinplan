@@ -1197,8 +1197,13 @@ a {
   text-decoration: none;
   color: #0D0D0D;
 }
-a:active {
-  color: #14918F;
+a:not(.btn):active {
+  text-decoration: none !important;
+  color: #14918F !important;
+  background-color: transparent !important;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  box-shadow: none !important;
 }
 @media (hover: hover) and (pointer: fine) {
   a:hover {
@@ -1206,7 +1211,7 @@ a:active {
   }
 }
 a.text_primary:active {
-  color: #FF6F4F;
+  color: #FF6F4F !important;
 }
 @media (hover: hover) and (pointer: fine) {
   a.text_primary:hover {
