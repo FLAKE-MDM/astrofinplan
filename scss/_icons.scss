@@ -31,9 +31,16 @@
             opacity: 0;
         }
     }
-    .active>&, .components-item.active &{
+    .active>&, .components-item.active &, a:active>&{
         &:before{opacity: 0;}
         &:after{opacity: 1;}
+    }
+
+    @include bp(hv){
+        a:hover>&{
+            &:before{opacity: 0;}
+            &:after{opacity: 1;}
+        }
     }
 }
 .icon-whatsapp-circle{
@@ -140,7 +147,14 @@
 .icon-caret{
     width: 1.5rem;
     height: 2rem;
-    background-image: url(../img/icons/caret.svg);
+
+    &:before{
+        background-image: url(../img/icons/caret.svg);
+    }
+
+    &:after{
+        background-image: url(../img/icons/caret-active.svg);
+    }
 }
 
 .icon-close{

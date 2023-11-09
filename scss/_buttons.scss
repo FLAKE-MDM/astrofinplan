@@ -167,6 +167,14 @@
         @include bp(md){
             min-width: 1rem;
         }
+
+        &-xl{
+            min-width: 45rem;
+
+            @include bp(md){
+                min-width: 1rem;
+            }
+        }
     }
 }
 

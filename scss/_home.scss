@@ -9,7 +9,7 @@
   }
 
   @include bp(sm){
-   padding: 9.8rem 0;
+   padding: 4.8rem 0;
   }
 
   &__title{
@@ -165,53 +165,90 @@
   margin-right: 1.4rem;
   max-width: 28rem;
   position: relative;
-  padding: 1.2rem;
   font-size: 2.4rem;
   font-weight: bold;
   color: $dark;
+  padding: 0;
 
   @include bp(md){
     margin: 0 0.5rem 0.7rem;
-    padding: 0.7rem;
     font-size: 1.4rem;
     max-width: 16.2rem;
     border-radius: 1rem;
+    padding: 0;
   }
 
-  &__content{
-    border: 1px solid $primary;
-    border-radius: 1rem;
-    padding: 2.8rem 1rem 2.7rem;
-
-    @include bp(md){
-      padding: 1.4rem 0.5rem 1.5rem;
-    }
-  }
-
-  &:before, &:after{
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 50%;
-    border: 1px solid #D9D9D9;
-
-    @include bp(md){
-      display: none;
-    }
+  @include bp(sm){
+    display: none!important;
   }
 
   &:before{
-    width: 3.4rem;
-    height: 3.4rem;
-    left: 33.3%;
-    top: -0.8rem;
+    content: '';
+    border: 1px solid $primary;
+    border-radius: 1rem;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    bottom: 1.2rem;
+    left: 1.2rem;
+
+    @include bp(md){
+      top: 0.6rem;
+      right: 0.7rem;
+      bottom: 0.7rem;
+      left: 0.7rem;
+    }
   }
 
-  &:after{
-    width: 5.9rem;
-    height: 5.9rem;
-    left: -1.4rem;
-    bottom: -1.7rem;
+  &__close{
+    position: absolute;
+    top: 1.6rem;
+    left: 1.6rem;
+    z-index: 2;
+    width: 1.5rem;
+    height: 1.5rem;
+
+    @include bp(md){
+      top: 0.5rem;
+      left: 0.5rem;
+    }
+  }
+
+  &__content{
+    padding: 4.1rem 1rem 4rem;
+    overflow: hidden;
+    position: relative;
+
+    @include bp(md){
+      padding: 2.2rem 1rem 2.4rem;
+      line-height: normal;
+    }
+
+    &:before, &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid #D9D9D9;
+  
+      @include bp(md){
+        display: none;
+      }
+    }
+  
+    &:before{
+      width: 3.4rem;
+      height: 3.4rem;
+      left: 33.3%;
+      top: -0.8rem;
+    }
+  
+    &:after{
+      width: 5.9rem;
+      height: 5.9rem;
+      left: -1.4rem;
+      bottom: -1.7rem;
+    }
   }
 
   &__mark{
@@ -221,7 +258,7 @@
 
     @include bp(md){
       right: 0.5rem;
-      top: -0.9rem;
+      top: -1rem;
     }
   }
 }
@@ -542,6 +579,10 @@
 .advantages-item{
   &__title{
     margin-bottom: 0.8rem;
+
+    &-md{
+      margin: 0.4rem 0 1.3rem;
+    }
 
     @include bp(md){
       font-size: 2rem;

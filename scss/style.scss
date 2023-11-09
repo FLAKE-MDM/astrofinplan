@@ -482,6 +482,7 @@ body{
         background: url(../img/icons/support.svg) 0 0 no-repeat;
         background-size: contain;
         padding: 0;
+        display: flex;
 
         @include bp(md){
             width: 5.9rem;
@@ -556,6 +557,24 @@ body{
     }
 }
 
+.line{
+    position: relative;
+    height: 11rem;
+    border-right: 4px solid $primary;
+    width: 14rem;
+
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: $primary;
+        border-radius: 50%;
+        bottom: -0.5rem;
+        left: -0.6rem;
+    }
+}
 
 @import 'form';
 @import 'header';
@@ -564,6 +583,7 @@ body{
 @import 'about';
 @import 'home';
 @import 'articles';
+@import 'consultation';
 
 
 

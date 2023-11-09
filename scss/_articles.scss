@@ -191,6 +191,10 @@
   height: 39.9rem;
   grid-template-rows: auto 1fr;
 
+  @include bp(xxxl){
+    height: auto;
+  }
+
   @include bp(lg){
     padding: 3rem 2rem;
     margin-bottom: 3.7rem;
@@ -287,10 +291,14 @@
     margin-bottom: auto;
     max-height: 16.6rem;
 
-    @include bp(xl){
-      max-height: 12rem;
-      overflow: hidden;
+    @include bp(xxxl){
+      max-height: none;
     }
+
+    // @include bp(xl){
+    //   max-height: 12rem;
+    //   overflow: hidden;
+    // }
 
     @include bp(md){
       max-height: 12.4rem;

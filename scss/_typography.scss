@@ -3,6 +3,10 @@ a{
     text-decoration: none;
     color: $black;
 
+    &:active{
+        color: $primary;
+    }
+
     @include bp(hv){
         &:hover{
             color: $primary;
@@ -10,6 +14,10 @@ a{
     }
 
     &.text_primary{
+        &:active{
+            color: $orange;
+        }
+
         @include bp(hv){
             &:hover{
                 color: $orange;
@@ -159,6 +167,10 @@ p{
 
     &_dark{
         color: $dark;
+    }
+
+    &_light{
+        color: $gray;
     }
 
     // weight

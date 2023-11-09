@@ -327,7 +327,7 @@
       display: block;
 
       @include bp(md){
-        // padding: 1rem 2rem 1rem 3rem;
+        font-size: 1.6rem;
       }
 
       &.active{

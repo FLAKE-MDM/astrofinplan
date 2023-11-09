@@ -68,7 +68,7 @@
     }
 
     &__contacts{
-        width: fit-content;
+        text-align: center;
         margin: 0 auto 2.5rem;
 
         @include bp(md){
