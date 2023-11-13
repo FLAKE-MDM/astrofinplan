@@ -285,7 +285,6 @@
 }
 
 // education
-
 .certificate{
   &-slider{
     margin: 0 2% 0 4.1%;
@@ -432,6 +431,22 @@
     @include bp(sm){
       margin-top: 5.2rem;
       padding: 2.1rem 2rem 2.7rem;
+    }
+
+    &_clear{
+      @include bp(lg-up){
+        display: block;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;
+        background: none;
+      }
+
+      .form-block{
+        width: 80rem;
+        margin: 0 auto;
+        max-width: 100%;
+      }
     }
 
     &:before{

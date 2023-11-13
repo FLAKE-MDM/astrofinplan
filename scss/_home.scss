@@ -86,6 +86,27 @@
     background: linear-gradient(135deg, #DCF8F8 -9.98%, #ECF7FF 107.65%);
   }
 
+  &_padding{
+    padding: 3rem 5rem;
+    border-radius: 4rem;
+
+    @include bp(md){
+      border-radius: 2rem;
+      padding: 3rem 3rem 3.1rem;
+    }
+
+    @include bp(sm){
+      padding: 2rem 2rem 1.9rem;
+      border-radius: 1rem;
+    }
+
+    p{
+      @include bp(md){
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
   &_md{
     width: 100.6rem;
     margin: 0 auto;
@@ -346,6 +367,25 @@
     }
 
     .advantages-item{
+      @include bp(xl-up){
+        &:before{
+          width: 11.4rem;
+          height: 6.3rem;
+          background: none;
+          border-radius: 0;
+        }
+
+        &:after{
+          content: '';
+          position: absolute;
+          width: 1.5rem;
+          height: 1.5rem;
+          border-radius: 50%;
+          background: $primary;
+          display: block;
+        }
+      }
+
       &:nth-of-type(1){
         @include bp(xl-up){
           margin-left: 10%;
@@ -577,6 +617,11 @@
 
     &-md{
       margin: 0.4rem 0 1.3rem;
+
+      @include bp(md){
+        font-size: 2rem;
+        margin-bottom: 0.7rem;
+      }
     }
 
     @include bp(md){
@@ -599,23 +644,6 @@
 
       p{
         padding: 0 2rem 0.2rem;
-      }
-
-      &:before{
-        width: 11.4rem;
-        height: 6.3rem;
-        background: none;
-        border-radius: 0;
-      }
-
-      &:after{
-        content: '';
-        position: absolute;
-        width: 1.5rem;
-        height: 1.5rem;
-        border-radius: 50%;
-        background: $primary;
-        display: block;
       }
     }
 
@@ -950,7 +978,30 @@
       @include bp(sm){
         text-align: center;
         justify-content: center;
-        padding-top: 2.1rem;
+        padding-top: 3.1rem;
+      }
+
+      &_padding.step-item__title{
+        padding: 2rem 2rem 2rem 4.1rem;
+
+        @include bp(md){
+          padding-left: 3.1rem;
+        }
+
+        @include bp(sm){
+          padding: 1.9rem 2rem 1.6rem;
+        }
+
+        .title{
+          @include bp(md){
+            font-size: 2.6rem;
+            font-family: Verdana, Arial, sans-serif;
+          }
+
+          @include bp(sm){
+            font-size: 2.2rem;
+          }
+        }
       }
 
       .title{
@@ -962,6 +1013,7 @@
         @include bp(sm){
           font-size: 1.8rem;
         }
+
       }
 
       .title_size-md{
@@ -988,9 +1040,40 @@
         padding: 2.2rem 1.9rem;
       }
 
+      &_padding{
+        @include bp(md){
+          padding: 2.5rem 1.9rem;
+        }
+
+        @include bp(sm){
+          padding: 2rem 1.9rem 1.8rem;
+        }
+
+        .arrow-list__item{
+          &:not(:last-child){
+            @include bp(md){
+              margin-bottom: 2.45rem;
+            }
+          }
+        }
+      }
+
       a{
         @include bp(md){
           font-size: 1.8rem;
+        }
+      }
+
+      &-title{
+        margin: 0 -2rem 3.2rem 0;
+
+        @include bp(md){
+          font-size: 1.8rem;
+          margin: 0 0 2.4rem 0.2rem;
+        }
+
+        @include bp(sm){
+          margin: 0 0.1rem 1.7rem;
         }
       }
     }

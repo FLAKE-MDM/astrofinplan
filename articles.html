@@ -256,7 +256,7 @@
         <!-- /content -->
         <!-- footer -->
         <footer class="footer text_inversion">
-          <a href="#wrap" class="up-link d-none d-lg-flex"><span class="icon icon-arrow-up"></span></a>
+          <a href="#wrap" class="up-link d-none d-lg-flex btn"><span class="icon icon-arrow-up"></span></a>
             <div class="container">
               <div class="footer__content">
                 <div class="footer__col-1">
@@ -349,7 +349,49 @@
     </div>
 
 
+    <!-- callback -->
+  <div class="modal fade" id="callback">
+    <div class="modal-dialog">
+      <div class="mark modal__mark">БЕСПЛАТНО</div>
+      <div class="modal__content">
+        <div class="circle-top"></div>
+        <div class="circle-bottom"></div>
+        <button type="button" class="icon icon-close modal-close modal__close"></button>
+        <div class="title mb-md text_center text_upper">Стратегия увеличения личного дохода</div>
+        <div class="text_center modal__title text_bold text_primary mb-lg">Пошаговый алгоритм от финансового астролога</div>
+        <div class="modal__form">
+          <form action="#">
+            <div class="form-group form-group_sm">
+              <div class="label text_size-sm">Ваше имя</div>
+              <input type="text" class="form-control form-control_dark">
+            </div>
+            <div class="form-group">
+              <div class="label text_size-sm">Телефон</div>
+              <input type="tel" class="form-control form-control_dark">
+            </div>
+            <div class="text_center">
+              <button href="#thanks" class="btn btn_primary w-100 btn_size-xl modal__btn modal-open">получить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /callback -->
 
+  <!-- thanks -->
+  <div class="modal fade" id="thanks">
+    <div class="modal-dialog modal-dialog_sm">
+      <div class="modal__content modal__content_clear">
+        <button type="button" class="icon icon-close-orange modal-close modal__close modal__close-sm"></button>
+        <div class="modal__body">
+          <div class="text_center text_upper text_size-xl text_bold text_dark">Спасибо за ваше сообщение,
+            Оно успешно отправлено</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /thanks -->
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>

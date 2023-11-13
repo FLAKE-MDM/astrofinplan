@@ -77,8 +77,8 @@ $(".modal-open").click(function(e){
   e.preventDefault();
   $(".modal").removeClass("show");
   $(this.getAttribute("href")).addClass("show");
-  $('body').removeClass('modal-open');
-  $('body').addClass('modal-open');
+  $('body').removeClass('overflow-none');
+  $('body').addClass('overflow-none');
 })
 $(".modal").mousedown(function(e){
   let closeLinks = document.querySelectorAll(".modal-close");
@@ -87,14 +87,14 @@ $(".modal").mousedown(function(e){
   for(let elem of closeLinks){
     if(e.target == elem){
       $(this).removeClass("show");
-      $('body').removeClass('modal-open');
+      $('body').removeClass('overflow-none');
       $('.login__mobile-link').removeClass('active');
     }
   }
   for(let elem of modalsGroup){
     if(e.target == elem){
       $(this).removeClass("show");
-      $('body').removeClass('modal-open');
+      $('body').removeClass('overflow-none');
       $('.login__mobile-link').removeClass('active');
     }
   }
@@ -139,5 +139,4 @@ new Swiper(".certificate-slider", {
     prevEl: ".certificate-prev",
   },
 });
-
 

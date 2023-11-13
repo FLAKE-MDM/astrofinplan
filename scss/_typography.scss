@@ -54,7 +54,6 @@ p{
 .title{
     color: $dark;
     font-weight: bold;
-    line-height: none;
     font-size: 4.8rem;
     font-family: Verdana, sans-serif;
 
@@ -155,11 +154,22 @@ p{
             line-height: normal;
         }
         &-xl{
-            
+            font-size: 3.6rem;
+            line-height: normal;
+
+            @include bp(sm){
+                font-size: 2rem;
+            }
         }
     }
     &_styling{
         font-family: Verdana, Arial, sans-serif;
+
+        &-xl{
+            @include bp(xl-up){
+                font-family: Verdana, Arial, sans-serif;
+            }
+        }
     }
     // colors
     &_primary{

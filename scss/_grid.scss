@@ -10,6 +10,14 @@
   align-items: flex-end;
 }
 
+.align-items-start{
+  align-items: flex-start!important;
+}
+
+.align-items-baseline{
+  align-items: baseline;
+}
+
 .justify-content-between{
   justify-content: space-between;
 }
@@ -381,22 +389,26 @@
   width: 100%!important;
   &_lg{
       @include bp(lg-up){
-          width: 100%;
+        width: 100%;
       }
   }
   &_md{
       @include bp(md){
-          width: 100%;
+        width: 100%;
       }
   }
   &_sm{
       @include bp(sm){
-          width: 100%;
+        width: 100%!important;
       }
   }
 }
 
 .order{
+  &-2{
+    order: 2;
+  }
+
   &-md-2{
     @include bp(md-up){
       order: 2;
