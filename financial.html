@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroFinPlan</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        <div class="support dropdown">
+          <a href="#" class="support__dropdown-toggle dropdown-toggle"></a>
+          <div class="dropdown-menu support__dropdown-menu">
+            <div class="d-flex flex-column align-items-center support-list">
+              <a href="#" target="_blank" class="icon icon-whatsapp-support support-list__item"></a>
+              <a href="#" target="_blank" class="icon icon-tg-support support-list__item"></a>
+              <a href="#" target="_blank" class="icon icon-vk-support support-list__item"></a>
+            </div>
+          </div>
+        </div>
+        <!-- header -->
+        <header class="header">
+          <div class="container">
+            <div class="d-flex align-items-center">
+              <a href="index.html" class="logo d-inline-flex header__logo"><img src="img/logo.svg" alt="" class="img-fluid"></a>
+              <div class="slogan text_primary text_bold">Для тех, кто ищет себя <br>и хочет увеличить доход</div>
+              <nav class="nav collapse d-xl-block" id="nav">
+                <ul class="nav-list d-xl-flex text_center_lg">
+                  <li class="nav-list__item"><a href="#" class="nav-list__link">Главная</a></li>
+                  <li class="nav-list__item"><a href="#" class="nav-list__link">Отзывы</a></li>
+                  <li class="nav-list__item"><a href="#" class="nav-list__link">Статьи</a></li>
+                  <li class="nav-list__item dropdown">
+                    <a href="#" class="nav-list__link dropdown-toggle active">Консультации</a>
+                    <div class="dropdown-menu dropdown-menu_nav">
+                      <ul class="dropdown-menu-list">
+                        <li class="dropdown-menu-list__item"><a href="#" class="dropdown-menu-list__link">Астрология личности</a></li>
+                        <li class="dropdown-menu-list__item"><a href="#" class="dropdown-menu-list__link">Финансовая астродиагностика</a></li>
+                        <li class="dropdown-menu-list__item"><a href="#" class="dropdown-menu-list__link">Совместимость с партнером</a></li>
+                        <li class="dropdown-menu-list__item"><a href="#" class="dropdown-menu-list__link">Детская профориентация</a></li>
+                        <li class="dropdown-menu-list__item"><a href="#" class="dropdown-menu-list__link">Астрологический прогноз</a></li>
+                        <li class="dropdown-menu-list__item"><a href="#" class="dropdown-menu-list__link">Подбор даты события</a></li>
+                        <li class="dropdown-menu-list__item"><a href="#" class="dropdown-menu-list__link">Личный финансовый план за час</a></li>
+                        <li class="dropdown-menu-list__item"><a href="#" class="dropdown-menu-list__link">Ректификация</a></li>
+                        <li class="dropdown-menu-list__item"><a href="#" class="dropdown-menu-list__link">Коучинг</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-list__item"><a href="#" class="nav-list__link">Обо мне</a></li>
+                </ul>
+                <div class="d-xl-none">
+                  <div class="social-list d-flex nav__social-list justify-content-center">
+                    <a href="#" target="_blank" class="social-list__item icon icon-whatsapp-circle-nav"></a>
+                    <a href="#" target="_blank" class="social-list__item icon icon-tg-circle-nav"></a>
+                  </div>
+                  <div class="nav__contacts">
+                    <p>Тел. <a href="tel:+79652451605">+7 965 245 1605</a></p>
+                    <p>E-mail: <a href="mailto:astrofinplan@yandex.ru">astrofinplan@yandex.ru</a></p>
+                  </div>
+                  <div class="text_center"><a href="#callback" class="btn btn_primary modal-open">Оставить заявку</a></div>
+                </div>
+              </nav>
+              <a href="#callback" class="btn btn_primary d-none d-md-inline-flex modal-open">Оставить заявку</a>
+              <div class="social-list d-none d-xxl-flex">
+                <a href="#" target="_blank" class="social-list__item icon icon-whatsapp-circle"></a>
+                <a href="#" target="_blank" class="social-list__item icon icon-tg-circle"></a>
+              </div>
+              <a href="#nav" class="btn-menu d-xl-none btn btn_primary">
+                <div class="btn-menu__item"></div>
+                <div class="btn-menu__item"></div>
+                <div class="btn-menu__item"></div>
+              </a>
+            </div>
+          </div>
+        </header>
+        <!-- /header -->
+        <!-- content -->
+        <div class="content_sm">
+          <div class="container">
+            <!-- breadcrumb -->
+            <ul class="breadcrumb">
+              <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Консультации</a></li>
+              <li class="breadcrumb__item">Финансовая астродиагностика</li>
+            </ul>
+            <!-- /breadcrumb -->
+            <!-- consultation -->
+            <div class="consultation consultation_financial">
+              <div class="consultation__image order-md-2"><img src="img/financial.png" alt="" class="img-fluid"></div>
+              <div class="consultation__text text_center_sm">
+                <div class="title mb-lg title_heading">Как увеличить доход?</div>
+                <p class="text_bold text_styling-xl text_size-lg mb-lg text_light">Помощь в выборе профессии и поиске эффективных способов заработка</p>
+                <div class="box consultation__box text_center pos-rel w-100_sm">
+                  <div class="box__title">Финансовая астродиагностика</div>
+                  <a href="#" class="btn btn_primary btn_size-xl-mobile btn_large-xl">записаться</a>
+                </div>
+              </div>
+            </div>
+            <div class="line consultation__line_financial"></div>
+            <!-- /consultation -->
+            <!-- for-whom -->
+            <section class="for-whom-section for-whom-section_financial">
+              <div class="title text_center mb-sm">Знакомо ли вам следующее?</div>
+              <!-- problems -->
+              <div class="problems problems_financial">
+                <div class="problems-item text_center d-flex flex-column align-items-center">
+                  <div class="advantages-item__icon bg_light problems-item__icon">
+                    <img src="img/icons/advantages-3.svg" alt="" class="img-fluid">
+                  </div>
+                  <p>Есть проблемы с текущим доходом?</p>
+                </div>
+                <div class="problems-item text_center d-flex flex-column align-items-center">
+                  <div class="advantages-item__icon bg_light problems-item__icon">
+                    <img src="img/icons/advantages-12.svg" alt="" class="img-fluid">
+                  </div>
+                  <p>Боитесь за свои финансы в будущем?</p>
+                </div>
+                <div class="problems-item text_center d-flex flex-column align-items-center">
+                  <div class="advantages-item__icon bg_light problems-item__icon">
+                    <img src="img/icons/advantages-13.svg" alt="" class="img-fluid">
+                  </div>
+                  <p>Не понимаете, где ваше место в жизни?</p>
+                </div>
+                <div class="problems-item text_center d-flex flex-column align-items-center">
+                  <div class="advantages-item__icon bg_light problems-item__icon">
+                    <img src="img/icons/advantages-4.svg" alt="" class="img-fluid">
+                  </div>
+                  <p>Зашли  в тупик и хотите поменять карьеру?</p>
+                </div>
+                <div class="problems__image"><img src="img/problems-financial.png" alt="" class="img-fluid"></div>
+              </div>
+              <!-- /problems -->
+              <div class="box box_md box_light problems_financial__box title_size-md text_center">
+                Какие бы вы не испытывали проблемы с деньгами, их источник лежит гораздо глубже, чем кажется на первый взгляд.
+              </div>
+            </section>
+            <!-- /for-whom -->
+            <!-- why-section -->
+            <section class="why-section">
+              <div class="d-md-flex mb-md align-items-end why-section__title justify-content-between">
+                <div class="line why-section__line order-md-2"></div>
+                <div class="title text_center_sm">Почему так происходит?</div>
+              </div>
+              <div class="why-section__content">
+                <div class="why-section__text">
+                  <div class="d-none d-md-block">
+                    <p>Люди не равны и обладают совершенно разным потенциалом. Следовать примеру или идти по шагам успеха другого человека далеко не всегда приводит к такому же результату.</p>
+                    <p>На вашу ситуацию с деньгами влияют:</p>
+                    <p>1) линии судьбы, которые читаются из карты рождения методами астрологии</p>
+                    <p>2) привычки, заложенные семьей и окружением. </p>
+                    <p>3) И только в третью очередь соблюдение вами правил финансовой грамотности. </p>
+                    <p>Что же делать?</p>
+                    <p>Начинать с базовых вещей, то есть с выяснения вашего финансового потенциала, заложенного в карте рождения.</p>
+                  </div>
+                  <div class="d-md-none">
+                    <p>Использование астрологии более эффективно для профориентации, потому что в итоге астрологической профориентаци вы получаете не только информацию о талантах и способностях ребенка (с чем справляются и тесты по психологии), но и варианты, где конкретно ваш ребенок  эти таланты и способности сможет реализовать и заработать на них. А вот эту информацию уже ни один психологический тест вам не даст.</p>
+                    <p>Только астрологическая профориентация способна сделать  синтез из важных четырех компонентов, выбрав оптимальное сочетание.</p>
+                  </div>
+                </div>
+                <div class="why-section__image"><img src="img/financial-why.jpg" alt="" class="w-100"></div>
+              </div>
+              <div class="line why-section__line-end"></div>
+            </section>
+            <!-- /for-what -->
+            <!-- step-item -->
+            <div class="step-item">
+              <div class="step-item__title step-item__title_padding"><div class="title">Что вы получите?</div></div>
+              <div class="step-item__content bg_light step-item__content_padding">
+                <div class="text_size-lg text_bold text_primary text_styling-xl step-item__content-title">После консультации «Финансовая астродиагностика»:</div>
+                <ul class="arrow-list">
+                  <li class="arrow-list__item">понимание о размере максимального возможного заработка</li>
+                  <li class="arrow-list__item">пошаговый алгоритм расширения вашего финансового потока</li>
+                  <li class="arrow-list__item">варианты самых денежных профессий для вас</li>
+                  <li class="arrow-list__item">стратегии социального успеха</li>
+                  <li class="arrow-list__item">стратегии инвестиционного успеха</li>
+                  <li class="arrow-list__item">понимание о  потенциальных узких мест  в финансах</li>
+                </ul>
+              </div>
+            </div>
+            <!-- /step-item -->
+            <div class="line line_margin"></div>
+            <!-- contents-section -->
+            <section class="contents-section box contents-section_financial">
+              <h2 class="title text_center">Содержание консультации</h2>
+              <div class="contents-section__content">
+                <div class="contents-section__col">
+                  <div class="advantages-item advantages-item_danger advantages-item_clear">
+                    <div class="advantages-item__title text_bold text_primary">Способы увеличения дохода</div>
+                    <p class="text_size-md">Что делать, чтобы увеличить свой заработок (сменить ли работу, на какой должности работать, на что обращать внимание).</p>
+                  </div>
+                  <div class="advantages-item advantages-item_clear">
+                    <div class="advantages-item__title text_bold text_primary">Ваша формула денег</div>
+                    <p class="text_size-md">Это свод индивидуальных правил вашей жизни для расширения финансового потока и создания  капитала. </p>
+                  </div>
+                  <div class="advantages-item advantages-item_medium advantages-item_clear">
+                    <div class="advantages-item__title text_bold text_primary">Ваша самая денежная профессия</div>
+                    <p class="text_size-md">Какая профессиональная деятельность принесет вам максимум денег и реализацию вашего потенциала.</p>
+                  </div>
+                  <div class="advantages-item advantages-item_light advantages-item_clear">
+                    <div class="advantages-item__title text_bold text_primary">Стоит ли создавать бизнес</div>
+                    <p class="text_size-md">Ваши сильные и слабые стороны, как предприинмателя. Есть ли надежный потенциал для  собственного дела. </p>
+                  </div>
+                  <div class="contents-section__image"><img src="img/contents.png" alt="" class="img-fluid"></div>
+                </div>
+                <div class="contents-section__col">
+                  <div class="advantages-item advantages-item_danger advantages-item_clear">
+                    <div class="advantages-item__title text_bold text_primary">Как управлять деньгами</div>
+                    <p class="text_size-md">Правильное поведение с деньгами. Копить или брать кредит. Как вам сохранять деньги и куда инвестировать накопленное</p>
+                  </div>
+                  <div class="advantages-item advantages-item_clear text_lef">
+                    <div class="advantages-item__title text_bold text_primary">Работать по найму или быть самозанятым</div>
+                    <p class="text_size-md">В какой сфере больше удачи в карьере, где обстоятельства дадут максимум дохода. </p>
+                  </div>
+                  <div class="advantages-item advantages-item_medium advantages-item_clear">
+                    <div class="advantages-item__title text_bold text_primary">Ваши психологические установки</div>
+                    <p class="text_size-md">Ваши личностные характеристики, плюсы и минусы характера, которые напрямую влиют на уровень дохода и карьеру.</p>
+                  </div>
+                  <div class="advantages-item advantages-item_light advantages-item_clear">
+                    <div class="advantages-item__title text_bold text_primary">Ваши финансовые блоки и источники убытков</div>
+                    <p class="text_size-md">Ваши  скрытые установки,  которые приводят к убыткам и потерям. Как минимизировать риски.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="text_center">
+                <a href="#callback" class="btn btn_primary btn_size-xl-mobile modal-open">оставить заявку</a>
+              </div>
+            </section>
+            <!-- /contents-section -->
+            <!-- work-section -->
+            <section class="work-section">
+              <div class="d-flex align-items-end justify-content-between">
+                <h2 class="title">Как проходит консультация?</h2>
+                <div class="line work-section__line_financial"></div>
+              </div>
+              <div class="work-section__content work-section__content_fianncial">
+                <div class="work-section__text">
+                  <ul class="steps-list">
+                    <li class="steps-list-item">
+                      <div class="steps-list-item__num steps-list-item__num_first">1</div>
+                      <div class="text_bold text_styling-xl text_primary text_size-lg">Первый шаг</div>
+                      <p>Вы оставляете заявку на сайте или пишите мне в <span class="d-none d-md-inline">любом удобном</span> мессенджере. Я задаю свои уточняющие вопросы по вашему запросу.</p>
+                    </li>
+                    <li class="steps-list-item">
+                      <div class="steps-list-item__num">2<div class="pie-chart pie-chart_sm"></div></div>
+                      <div class="text_bold text_styling-xl text_primary text_size-lg">Оплата</div>
+                      <p>Варианты оплаты я вам отправлю в мессенджере. И там же назначаем дату встречи, обычно через 2–3 дня после оплаты.</p>
+                    </li>
+                    <li class="steps-list-item">
+                      <div class="steps-list-item__num">3<div class="pie-chart pie-chart_lg"></div></div>
+                      <div class="text_bold text_styling-xl text_primary text_size-lg">Встреча онлайн</div>
+                      <p>Рассказываю вам результаты 
+                        <span class="d-none d-md-inline">Финансовой астродиагностики и отвечаю на ваши</span>
+                        <span class="d-none d-md-inline"> вопросы</span>
+                        <span class="d-md-none">Астродиагностики</span>. Длительность встречи 1–1,5 часа. Проводится в skype или zoom</p>
+                    </li>
+                    <li class="steps-list-item">
+                      <div class="steps-list-item__num steps-list-item__num_last">4<div class="pie-chart pie-chart_last"></div></div>
+                      <div class="text_bold text_styling-xl text_primary text_size-lg">Письменные результаты</div>
+                      <p>Если вы выбрали тариф с письменной консультацией, отправляю вам pdf файл (7-10 страниц) с информацией, о которой рассказывала на встрече (или вместо нее, если хотите сохранить полную анонимность)</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="work-section__image"><img src="img/work-financial.png" alt="" class="img-fluid"></div>
+              </div>
+              <div class="d-lg-flex align-items-start">
+                <div class="box pos-rel box_padding">
+                  <p>Консультация может быть проведена как устно, так и письменно (в том числе полностью анонимно).</p>
+                    В результате письменной консультации вы получите pdf файл.
+                </div>
+                <div class="line work-section__line-end"></div>
+              </div>
+            </section>
+            <!-- /work-section -->
+            <!-- price-section -->
+            <section class="price-section price-section_financial">
+              <div class="title text_center text_primary mb-lg">Выберите формат Финансовой астродиагностки</div>
+              <div class="price-section__content d-grid grid-md-2">
+                <a href="#" class="price-item">
+                  <div href="#price-1" class="active price-item__title collapse-link text_bold text_dark text_size-lg text_center text_styling-xl">
+                    Устная консультация
+                    <div class="price-item__icon d-md-none"><span class="icon icon-caret-inversion"></span></div>
+                  </div>
+                  <div class="collapse d-md-block" id="price-1" style="display: block;">
+                    <div class="price-item__body text_center">
+                      <div class="price-item__price text_size-lg">5000₽</div>
+                      <span class="btn btn_primary w-100_md">
+                        <span class="d-none d-lg-inline-flex">Оставить заявку</span>
+                        <span class="d-lg-none">записаться</span>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="price-item">
+                  <div href="#price-2" class="price-item__title collapse-link text_bold text_dark text_size-lg text_center text_styling-xl">
+                    Письменная консультация
+                    <div class="price-item__icon d-md-none"><span class="icon icon-caret-inversion"></span></div>
+                  </div>
+                  <div class="collapse d-md-block" id="price-2">
+                    <div class="price-item__body text_center">
+                      <div class="price-item__price text_size-lg">10 000₽</div>
+                      <span class="btn btn_primary w-100_md">
+                        <span class="d-none d-lg-inline-flex">Оставить заявку</span>
+                        <span class="d-lg-none">записаться</span>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </section>
+            <!-- /price-section -->
+            <!-- faq -->
+            <section class="section faq-section faq-section_financial">
+              <h2 class="title text_center mb-lg faq-section_financial__title">
+                Ответы на самые популярные вопросы
+                <span class="line faq-section_financial__line"></span>
+              </h2>
+              <div class="faq-section__content">
+                <div class="faq-section__text order-lg-2 pos-rel">
+                  <div class="faq-item">
+                    <a href="#faq-1" class="faq-item__link text_primary d-flex align-items-center collapse-link text_bold active">
+                      <div class="faq-item__icon"><div class="faq-item__icon-angle"></div></div>
+                      Можно ли получить результаты Финансовой астродиагностики анонимно?
+                    </a>
+                    <div class="collapse" id="faq-1" style="display: block;">
+                      <div class="faq-item__body text_size-md">
+                        <p>В тарифе «Астродиагностика» все внимание сфокусировано на вашей финансовой ситуации и вопросам увеличения текущего дохода. В тарифе «Астрофинплан» есть все, что включено в тариф «Астродиагностика», но основной фокус внимания уделяется вопросам как увеличить пассивный доход путем создания капитала.</p>
+                        <p>Другими словами, если вы хотите создавать капитал, то нужно выбирать тариф «Астрофинплан». А если для вас на сегодня самое главное увеличить текущий доход, то выбирайте тариф «Астродиагностика».</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <a href="#faq-2" class="faq-item__link text_primary d-flex align-items-center collapse-link text_bold">
+                      <div class="faq-item__icon"><div class="faq-item__icon-angle"></div></div>
+                      Какой тариф выбрать, если я хочу узнать, в какой институт мне поступать?
+                    </a>
+                    <div class="collapse" id="faq-2">
+                      <div class="faq-item__body text_size-md">
+                        Вам нужно знать вашу полную дату рождения (день, месяц, год). В идеале нужно знать время рождения и место рождения.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <a href="#faq-3" class="faq-item__link text_primary d-flex align-items-center collapse-link text_bold">
+                      <div class="faq-item__icon"><div class="faq-item__icon-angle"></div></div>
+                      Какой тариф мне выбрать, если я хочу помочь мужу увеличить его доход?
+                    </a>
+                    <div class="collapse" id="faq-3">
+                      <div class="faq-item__body text_size-md">
+                        Вам нужно знать вашу полную дату рождения (день, месяц, год). В идеале нужно знать время рождения и место рождения.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <a href="#faq-4" class="faq-item__link text_primary d-flex align-items-center collapse-link text_bold">
+                      <div class="faq-item__icon"><div class="faq-item__icon-angle"></div></div>
+                      Можно ли заказать «Астрофинплан», если я не знаю точное время рождения?
+                    </a>
+                    <div class="collapse" id="faq-4">
+                      <div class="faq-item__body text_size-md">
+                        Вам нужно знать вашу полную дату рождения (день, месяц, год). В идеале нужно знать время рождения и место рождения.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <a href="#faq-5" class="faq-item__link text_primary d-flex align-items-center collapse-link text_bold">
+                      <div class="faq-item__icon"><div class="faq-item__icon-angle"></div></div>
+                      Можно ли подарить Финансовую астродиагностику?
+                    </a>
+                    <div class="collapse" id="faq-5">
+                      <div class="faq-item__body text_size-md">
+                        Вам нужно знать вашу полную дату рождения (день, месяц, год). В идеале нужно знать время рождения и место рождения.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="line faq-section_financial__line-end d-none d-lg-block"></div>
+                </div>
+                <div class="faq-section__image"><img src="img/icons/faq.svg" alt="" class="img-fluid"></div>
+              </div>
+            </section>
+            <!-- /faq -->
+            <!-- form -->
+            <section class="section form-section">
+              <div class="form-section__content">
+                <h2 class="title mb-xl">Остались вопросы?</h2>
+                <p>Напишите мне в Telegram или WhatsApp</p>
+                <div class="d-flex align-items-center mb-xxl mb-tablet-0">
+                  <div class="social-list d-flex form-section__social-list justify-content-center">
+                    <a href="#" target="_blank" class="social-list__item icon icon-whatsapp-circle-nav"></a>
+                    <a href="#" target="_blank" class="social-list__item icon icon-tg-circle-nav"></a>
+                  </div>
+                  <a href="tel:+79652451605" class="text_bold text_primary text_styling">+7 965 245 1605</a>
+                </div>
+                <p class="d-none d-xl-block">Всегда на связи!</p>
+              </div>
+              <div class="form-block text_inversion">
+                <div class="title title_size-md text_inversion text_center text_upper mb-sm">Заказать консультацию</div>
+                <form action="#">
+                  <div class="d-lg-grid grid-lg-2 grid-md">
+                    <div class="form-group">
+                      <div class="label text_size-sm">Ваше имя</div>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <div class="label text_size-sm">Телефон</div>
+                      <input type="tel" class="form-control">
+                    </div>
+                  </div>
+                  <div class="text_center mb-xs">
+                    <button class="btn btn_danger btn_size-xl">оставить заявку</button>
+                  </div>
+                </form>
+                <div class="text_size-sm text_center_md form-block__text">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с Политикой конфиденциальности</div>
+              </div>
+            </section>
+            <!-- /form -->
+            <!-- /form -->
+          </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <footer class="footer text_inversion">
+          <a href="#wrap" class="up-link d-none d-lg-flex btn"><span class="icon icon-arrow-up"></span></a>
+            <div class="container">
+              <div class="footer__content">
+                <div class="footer__col-1">
+                  <div class="d-flex align-items-center">
+                    <a href="index.html" class="logo footer__logo"><img src="img/logo-inversion.png" alt="" class="img-fluid"></a>
+                    <div class="footer__slogan text_size-md">Для тех, кто ищет себя <br>и хочет увеличить доход</div>
+                  </div>
+                </div>
+                <div class="footer__col-2">
+                  <div class="footer__title text_upper">Бесплатно</div>
+                  <p class="text_size-md">Мини-книга «Как увеличить доход с помощью астрологии?»</p>
+                </div>
+                <div class="footer__col-3">
+                  <div class="footer__title text_upper"><a href="#" class="text_inversion">Читайте</a></div>
+                    <ul class="footer-nav text_size-md">
+                       <li class="footer-nav__item"><a href="#" class="footer-nav__link">Не хочу считать расходы!</a></li>
+                       <li class="footer-nav__item"><a href="#" class="footer-nav__link">Что такое астрология или язык звезд?</a></li>
+                       <li class="footer-nav__item"><a href="#" class="footer-nav__link">Самое главное звено в системе личных финансов</a></li>
+                       <li class="footer-nav__item"><a href="#" class="footer-nav__link">Как научиться откладывать деньги?</a></li>
+                       <li class="footer-nav__item"><a href="#" class="footer-nav__link">Солнце в Деве, а вы пока не рок-звезда?</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col-4">
+                  <div class="wrapper">
+                    <div class="footer__title text_upper"><a href="#" class="text_inversion">Меню</a></div>
+                    <ul class="footer-nav text_size-md">
+                       <li class="footer-nav__item"><a href="#" class="footer-nav__link">Главная</a></li>
+                       <li class="footer-nav__item"><a href="#" class="footer-nav__link">Отзывы</a></li>
+                       <li class="footer-nav__item"><a href="#" class="footer-nav__link">Статьи</a></li>
+                       <li class="footer-nav__item"><a href="#" class="footer-nav__link">Услуги</a></li>
+                       <li class="footer-nav__item"><a href="#" class="footer-nav__link">Обо мне</a></li>
+                       <li class="footer-nav__item"><a href="#" class="footer-nav__link">Обучение</a></li>
+                    </ul>
+                  </div>
+                  <div class="wrapper">
+                    <div class="footer__title text_upper"><a href="#" class="text_inversion">Советы</a></div>
+                    <ul class="footer-nav text_size-md footer-nav_social">
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link d-flex align-items-center" target="_blank">
+                          <div class="footer-nav__icon"><span class="icon icon-vk-inversion"></span></div>
+                          Вконтакте
+                        </a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link d-flex align-items-center" target="_blank">
+                          <div class="footer-nav__icon"><span class="icon icon-tg-inversion"></span></div>
+                          Telegram
+                        </a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link d-flex align-items-center" target="_blank">
+                          <div class="footer-nav__icon"><span class="icon icon-ins-inversion"></span></div>
+                          Instagram
+                        </a>
+                      </li>
+                      <li class="footer-nav__item">
+                        <a href="#" class="footer-nav__link d-flex align-items-center" target="_blank">
+                          <div class="footer-nav__icon"><span class="icon icon-youtube-inversion"></span></div>
+                          YouTube
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="d-flex footer__contacts">
+                  <div class="social-list footer__social-list d-flex">
+                    <a href="#" target="_blank" class="social-list__item icon icon-whatsapp-inversion-circle"></a>
+                    <a href="#" target="_blank" class="social-list__item icon icon-tg-inversion-circle"></a>
+                  </div>
+                  <div class="text_size-md">
+                    <p>Тел. <a href="tel:+79652451605" class="text_inversion">+7 965 245 1605</a></p>
+                    <p>E-mail: <a href="mailto:astrofinplan@yandex.ru" class="text_inversion">astrofinplan@yandex.ru</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__bottom text_size-sm">
+                <div class="copyright">
+                  <p>© 2022 Анна Воробьева. Все права защищены. Использовать материалы сайта запрещено</p>
+                  <p>ИП Воробьева Анна Юрьевна. ИНН 503604003412 / ОГРН 322508100028997</p>
+                </div>
+                <div class="footer__links d-flex justify-content-between">
+                  <a href="#" class="link_underline text_inversion">Политика конфиденциальности</a>
+                  <a href="#" class="link_underline text_inversion">Договор-оферта</a>
+                </div>
+              </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+    </div>
+
+    <!-- callback -->
+  <div class="modal fade" id="callback">
+    <div class="modal-dialog">
+      <div class="mark modal__mark">БЕСПЛАТНО</div>
+      <div class="modal__content">
+        <div class="circle-top"></div>
+        <div class="circle-bottom"></div>
+        <button type="button" class="icon icon-close modal-close modal__close"></button>
+        <div class="title mb-md text_center text_upper">Стратегия увеличения личного дохода</div>
+        <div class="text_center modal__title text_bold text_primary mb-lg">Пошаговый алгоритм от финансового астролога</div>
+        <div class="modal__form">
+          <form action="#">
+            <div class="form-group form-group_sm">
+              <div class="label text_size-sm">Ваше имя</div>
+              <input type="text" class="form-control form-control_dark">
+            </div>
+            <div class="form-group">
+              <div class="label text_size-sm">Телефон</div>
+              <input type="tel" class="form-control form-control_dark">
+            </div>
+            <div class="text_center">
+              <button href="#thanks" class="btn btn_primary w-100 btn_size-xl modal__btn modal-open">получить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /callback -->
+
+  <!-- thanks -->
+  <div class="modal fade" id="thanks">
+    <div class="modal-dialog modal-dialog_sm">
+      <div class="modal__content modal__content_clear">
+        <button type="button" class="icon icon-close-orange modal-close modal__close modal__close-sm"></button>
+        <div class="modal__body">
+          <div class="text_center text_upper text_size-xl text_bold text_dark">Спасибо за ваше сообщение,
+            Оно успешно отправлено</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /thanks -->
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

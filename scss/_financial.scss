@@ -1,0 +1,583 @@
+.consultation_financial{
+  .consultation__image{
+    margin: -4.6rem 0 -5.5rem -2.4rem;
+
+    @include bp(md){
+      margin: -4.9rem 0 -5.5rem -2rem;
+    }
+
+    @include bp(sm){
+      margin: 0.9rem auto 0.1rem;
+      padding: 0 10% 0 14%;
+    }
+  }
+
+  .text_size-lg{
+    letter-spacing: 0.03rem;
+
+    @include bp(md){
+      letter-spacing: 0;
+    }
+  }
+
+  .consultation__box{
+    margin-top: 0;
+
+    @include bp(sm){
+      
+    }
+  }
+}
+
+.consultation__line_financial{
+  margin: -0.8rem 0 -2.6rem 4.6rem;
+  height: 15.2rem;
+
+  @include bp(md){
+    margin: 12px 0 -1.9rem -1px;
+    height: 11.2rem;
+    width: 15.2%;
+    border-bottom: 2px solid $primary;
+    border-right: none;
+    border-left: 2px solid $primary;
+  }
+
+  @include bp(sm){
+    width: 0;
+    margin: 0.3rem auto 1.1rem;
+    height: 5.5rem;
+
+  }
+
+  &::before{
+    @include bp(md){
+      left: auto;
+      right: -0.6rem;
+    }
+
+    @include bp(sm){
+      right: -0.4rem;
+    }
+
+  }
+}
+
+.for-whom-section_financial{
+  .title{
+    @include bp(md){
+      padding: 0 17%;
+    }
+  }
+
+  .problems-item__icon{
+    img{
+      max-height: 100%;
+    }
+  }
+}
+
+// problems
+.problems_financial{
+  margin-top: 4.2rem;
+  padding: 5rem 5% 2.6rem;
+
+  @include bp(md){
+    padding: 0.8rem 0 2.6rem;
+    margin: 0 -1.7rem -0.2rem;
+    padding-bottom: 0;
+  }
+
+  @include bp(sm){
+    margin: 4.1rem 0 -0.2rem;
+    gap: 1.7rem 0;
+  }
+
+  .problems-item:nth-of-type(odd){
+    margin-bottom: 9.5rem;
+
+    @include bp(md){
+      margin-bottom: 2.8rem;
+    }
+  }
+
+  .problems__image{
+    top: 1.5rem;
+
+    @include bp(md){
+      top: -2.5rem;
+    }
+
+    @include bp(sm){
+      margin: -4.4rem 0 2.1rem;
+      padding: 0 17.5%;
+    }
+  }
+
+  &__box{
+    padding: 5rem 5.8rem 5.8rem;
+    line-height: 120%;
+
+    @include bp(md){
+      padding: 3.1rem 4rem 4.2rem 3rem;
+      font-weight: bold;
+      font-size: 1.8rem;
+      text-align: left;
+      line-height: 120%;
+      color: $dark;
+    }
+
+    @include bp(sm){
+      padding: 2rem;
+      line-height: 124%;
+    }
+  }
+}
+
+// why-section
+.why-section{
+  &__line{
+    border-bottom: 4px solid $primary;
+    flex-grow: 1;
+    position: relative;
+    height: 18.5rem;
+    margin: 0.6rem 8.2% 1.7rem 5.4%;
+
+    @include bp(md){
+      flex-grow: 0;
+      height: 11.1rem;
+      margin: 0;
+      width: 20%;
+      position: absolute;
+      right: -0.1rem;
+      bottom: 1.2rem;
+    }
+
+    @include bp(sm){
+      position: relative;
+      margin: 0.4rem auto 1.1rem;
+      width: 0;
+      bottom: auto;
+      right: auto;
+      height: 5.6rem;
+    }
+
+    &:after{
+      content: '';
+      display: block;
+      width: 8rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-top: 4px solid $primary;
+
+      @include bp(md){
+        display: none;
+      }
+    }
+
+    &-end{
+      margin: -4px 0 2.8rem 0.6rem;
+
+      @include bp(md){
+        margin: 0.5rem 0 1.7rem 0.4rem;
+      }
+
+      @include bp(sm){
+        margin: 0 auto 1.2rem;
+      }
+    }
+  }
+
+  &__title{
+    @include bp(md){
+      position: relative;
+      text-align: center;
+      padding: 0 20%;
+      margin: 9.9rem 0 2.8rem;
+      justify-content: center;
+    }
+
+    @include bp(sm){
+      margin: 0 0 1.8rem;
+      padding: 0 5%;
+    }
+  }
+
+  &__content{
+    display: grid;
+    grid-template-columns: 54% auto;
+    grid-gap: 0 4rem;
+
+    @include bp(md){
+      grid-template-columns: 100%;
+    }
+
+    p{
+      @include bp(md){
+        margin-bottom: 1.5rem;
+      }
+
+      @include bp(sm){
+        margin-bottom: 1.3rem;
+      }
+    }
+  }
+
+  &__text{
+    @include bp(sm){
+      margin-right: -0.3rem;
+    }
+  }
+
+  &__image{
+    margin-top: 4.6rem;
+
+    @include bp(md){
+      margin-top: 1.4rem;
+    }
+
+    @include bp(sm){
+      margin-top: 0.7rem;
+    }
+  }
+}
+
+// contents
+.contents-section_financial{
+  margin-bottom: 0;
+
+  @include bp(lg-up){
+    padding: 7rem 5.5rem 7rem 5.4rem;
+    border-radius: 4rem;
+  }
+
+  @include bp(sm){
+    padding-bottom: 5rem;
+  }
+
+  .contents-section__content{
+    margin-right: 0;
+
+    @include bp(xl-up){
+      margin-bottom: 1.8rem;
+    }
+
+    @include bp(sm){
+      margin: 2.5rem 0 3rem;
+    }
+  }
+
+  .title{
+    @include bp(sm){
+      font-size: 2.6rem;
+    }
+  }
+
+  .contents-section__image{
+    bottom: 8.2rem;
+    right: 0;
+
+    @include bp(xxl){
+      width: 33%;
+    }
+
+    &:before{
+      width: 79.3rem;
+      height: 67rem;
+      background: url(../img/contents-lines-financial.png) 0 0 no-repeat;
+      background-size: contain;
+      top: 3.7rem;
+      left: -12.5%;
+
+      @include bp(xxl){
+        display: none;
+      }
+    }
+  }
+
+  .contents-section__col{
+    @include bp(lg-up){
+      grid-gap: 5.1rem 0;
+    }
+  }
+
+  .advantages-item_clear p{
+    padding: 0 1rem;
+    margin-top: 1rem;
+
+    @include bp(md){
+      padding: 0;
+      margin-top: 1.6rem;
+    }
+  }
+
+  .advantages-item__title{
+    @include bp(lg-up){
+      padding: 0 4rem;
+    }
+  }
+}
+
+// work-section
+.work-section{
+  &__content_fianncial{
+    grid-template-columns: 100%;
+    padding-bottom: 3.3rem;
+
+    @include bp(lg-up){
+      margin-top: 4.8rem;
+    }
+
+    @include bp(md){
+      padding-bottom: 2.4rem;
+    }
+  }
+
+  &__line_financial{
+    flex-grow: 1;
+    height: 16.7rem;
+    margin: 2rem -3px 2.1rem 2.8rem;
+    border-bottom: 4px solid $primary;
+
+    @include bp(md){
+      height: 11.1rem;
+      margin: 0.6rem -0.1rem 1.6rem 2.8rem;
+    }
+
+    @include bp(sm){
+      width: 32%;
+      flex-shrink: 0;
+      height: 9.2rem;
+      margin-bottom: 2.6rem;
+    }
+  }
+
+  .steps-list-item p{
+    @include bp(lg-up){
+      margin-top: 2rem;
+    }
+  }
+
+  .work-section__image{
+    position: absolute;
+    bottom: -2rem;
+    right: -0.9rem;
+
+    @include bp(xl){
+      width: 40%;
+    }
+
+    @include bp(md){
+      position: static;
+      width: 31.6rem;
+      margin: -0.1rem auto;
+      padding-left: 2rem;
+    }
+
+    @include bp(sm){
+      width: 22.7rem;
+      padding: 0;
+      margin-top: -0.2rem;
+    }
+  }
+
+  .steps-list-item{
+    &:not(:last-child){
+      margin-bottom: 3.6rem;
+
+      @include bp(md){
+        margin-bottom: 3.3rem;
+      }
+
+      @include bp(sm){
+        margin-bottom: 2.2rem;
+      }
+    }
+
+    &:nth-of-type(2){
+      @include bp(lg-up){
+        padding-right: 20%;
+      }
+    }
+
+    &:nth-of-type(3){
+      @include bp(lg-up){
+        padding-right: 30%;
+      }
+    }
+
+    &:nth-of-type(4){
+      @include bp(lg-up){
+        padding-right: 42%;
+      }
+    }
+  }
+
+  .steps-list-item__num{
+    top: 1.4rem;
+
+    @include bp(sm){
+      top: 1rem;
+    }
+
+    &::after{
+      @include bp(sm){
+        margin-top: 2.2rem;
+      }
+    }
+  }
+}
+
+// price
+.price-section_financial{
+  @include bp(md){
+    padding-top: 1.5rem;
+  }
+
+  .mb-lg{
+    @include bp(md){
+      margin-bottom: 1.4rem;
+    }
+
+    @include bp(sm){
+      margin-bottom: 1.1rem;
+    }
+  }
+}
+
+// faq
+.faq-section_financial{
+  @include bp(md){
+    padding-top: 3.1rem;
+  }
+
+  @include bp(sm){
+    padding: 0;
+  }
+
+  &__title{
+    position: relative;
+    padding: 0 10%;
+
+    @include bp(md){
+      padding: 0;
+      margin-bottom: 3.3rem!important;
+    }
+
+    @include bp(sm){
+      margin-bottom: 2.3rem !important;
+    }
+  }
+
+  &__line{
+    position: absolute;
+    bottom: 2rem;
+    width: 11.5%;
+    height: 16.2rem;
+    border-bottom: 4px solid $primary;
+    right: 0;
+
+    @include bp(md){
+      display: none;
+    }
+  }
+
+  &__line-end{
+    border-top: 4px solid $primary;
+    position: absolute;
+    bottom: -9.4rem;
+    right: 8px;
+    height: 16.3rem;
+    width: 21%;
+
+    &:before{
+      right: -0.9rem;
+      left: auto;
+    }
+  }
+
+  .faq-section__image{
+    @include bp(lg-up){
+      margin: 1.4rem 0 0 0.2rem;
+    }
+
+    @include bp(md){
+      margin: -2.4rem auto 1.7rem;
+    }
+
+    @include bp(sm){
+      margin: 0 auto 2.3rem;
+    }
+  }
+
+  .faq-section__text{
+    margin: 2.3rem 2% 0 -0.4rem;
+
+    @include bp(md){
+      margin: -0.1rem 0.2rem 0;
+    }
+  }
+
+  .faq-item__link{
+    @include bp(md){
+      font-size: 1.8rem;
+    }
+  }
+
+  .faq-item__body{
+    margin-bottom: -3.2rem;
+
+    @include bp(md){
+      font-size: 1.6rem;
+      line-height: 120%;
+      padding: 0.8rem 0 0 6.3rem;
+      margin-bottom: -0.8rem;
+    }
+
+    @include bp(sm){
+      padding: 1.5rem 0 0 4.8rem;
+      line-height: 119%;
+      margin-bottom: 0;
+    }
+
+    p{
+      @include bp(md){
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  .faq-item__icon{
+    @include bp(sm){
+      margin-right: 1.3rem;
+    }
+  }
+
+  .faq-item {
+    &:not(:last-child){
+      @include bp(md){
+        margin-bottom: 3.6rem;
+      }
+
+      @include bp(sm){
+        margin-bottom: 2.1rem;
+      }
+    }
+
+    &:last-child{
+      @include bp(lg-up){
+        margin-right: 25%;
+      }
+    }
+  }
+
+  .faq-section__content{
+    margin-bottom: -1.4rem;
+    padding: 0;
+
+    @include bp(sm){
+      padding: 0;
+      margin-top: -0.1rem;
+    }
+  }
+}
