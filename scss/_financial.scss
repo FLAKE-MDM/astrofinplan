@@ -319,8 +319,8 @@
 }
 
 // work-section
-.work-section{
-  &__content_fianncial{
+.work-section_fianncial{
+  .work-section__content_fianncial{
     grid-template-columns: 100%;
     padding-bottom: 3.3rem;
 
@@ -333,7 +333,7 @@
     }
   }
 
-  &__line_financial{
+  .work-section__line_financial{
     flex-grow: 1;
     height: 16.7rem;
     margin: 2rem -3px 2.1rem 2.8rem;

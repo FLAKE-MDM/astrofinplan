@@ -188,6 +188,10 @@ p{
         color: $gray;
     }
 
+    &_warning{
+        color: $orange;
+    }
+
     // weight
     &_normal{
         font-weight: 400;

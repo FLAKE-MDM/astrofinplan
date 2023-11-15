@@ -1,0 +1,9 @@
+// about-rectification
+.about-rectification{
+  &__content{
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-gap: 0 5%;
+    align-items: center;
+  }
+}

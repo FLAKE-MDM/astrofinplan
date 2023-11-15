@@ -52,7 +52,7 @@
   }
 
   &-grid{
-    display: grid;
+    display: grid!important;
     grid-gap: 2.3rem;
   }
 
@@ -297,6 +297,10 @@
   &-2{
     margin-right: 2rem;
   }
+
+  &-3{
+    margin-right: 3rem;
+  }
 }
 
 .ms{
@@ -310,6 +314,10 @@
 
   &-2{
     margin-left: 2rem;
+  }
+
+  &-3{
+    margin-left: 3rem;
   }
 }
 

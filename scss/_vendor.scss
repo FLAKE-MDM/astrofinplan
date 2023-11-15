@@ -358,6 +358,18 @@
     }
   }
 
+  &_tooltip{
+    border-radius: 2rem;
+    border: 3px solid var(--green, #14918F);
+    padding: 1.3rem 1rem 1.3rem 1.2rem;
+    bottom: 0.3rem;
+    left: 100%;
+    margin-left: 2.8rem;
+    top: auto;
+    min-width: 37.8rem;
+    letter-spacing: -0.001rem;
+  }
+
   &-list{
     &__item{
       &:not(:last-child){

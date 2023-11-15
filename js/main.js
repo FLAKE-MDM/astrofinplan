@@ -22,15 +22,27 @@ $(".btn-menu").click(function(e){
 });
 
 // dropdown
-$('.dropdown-toggle').click(function(e){
+$('.dropdown-toggle').click(function(e) {
   e.preventDefault();
-  $(this).parent().toggleClass('open');
-  $(document).mouseup(function(e){
-    let item = $(".dropdown.open");
-    if (item.has(e.target).length === 0){
-        item.removeClass('open');
+  let dropdownContainer = $(this).parent();
+
+  dropdownContainer.toggleClass('open');
+  $(this).toggleClass('active');
+
+  dropdownContainer.find('.dropdown-menu__close').click(function(e) {
+    e.preventDefault();
+    dropdownContainer.removeClass('open');
+    $(dropdownContainer).find('.dropdown-toggle').removeClass('active');
+    dropdownContainer.find('.dropdown-menu__close').off('click');
+  });
+
+  $(document).mouseup(function(e) {
+    if (dropdownContainer.has(e.target).length === 0) {
+      dropdownContainer.removeClass('open');
+      $(dropdownContainer).find('.dropdown-toggle').removeClass('active');
+      dropdownContainer.find('.dropdown-menu__close').off('click');
     }
-  })
+  });
 });
 
 // fake-select
@@ -113,6 +125,30 @@ function checkResolution() {
       },
     });
   }
+
+  if (window.innerWidth > 1399) {
+    // table
+    let headingList = document.querySelectorAll(".tariff-section-list li");
+    let tariffLists = document.querySelectorAll(".tariff-item-list");
+
+    for (let i = 0; i < headingList.length; i++) {
+      let heightHeading = parseInt(getComputedStyle(headingList[i]).height, 10);
+
+      for (let j = 0; j < tariffLists.length; j++) {
+        let tariffList = tariffLists[j].querySelectorAll("li");
+        let heightList = parseInt(getComputedStyle(tariffList[i]).height, 10);
+
+        if (heightHeading > heightList) {
+          tariffList[i].style.height = heightHeading + "px";
+        }
+
+        if (heightHeading < heightList) {
+          headingList[i].style.height = heightList + "px";
+        }
+      }
+    }
+  }
+
 }
 
 window.addEventListener('load', checkResolution);

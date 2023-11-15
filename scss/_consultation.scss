@@ -422,6 +422,7 @@
   &-section{
     padding: 7rem;
     margin-bottom: 4.3rem;
+    border-radius: 4rem;
 
     @include bp(xxl){
       padding: 5rem 4rem;
@@ -429,6 +430,7 @@
 
     @include bp(md){
       margin: 0 -4rem;
+      border-radius: 2rem;
     }
 
     @include bp(sm){
@@ -875,7 +877,7 @@
   }
 
   &_xs{
-    --value: 22%;
+    --value: 21%;
   }
 
   &_sm{
@@ -883,7 +885,7 @@
   }
 
   &_md{
-    --value: 45%;
+    --value: 41%;
   }
 
   &_lg{
