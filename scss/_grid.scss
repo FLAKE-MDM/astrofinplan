@@ -428,4 +428,10 @@
       order: 2;
     }
   }
+
+  &-xl-2{
+    @include bp(xl-up){
+      order: 2;
+    }
+  }
 }

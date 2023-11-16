@@ -24,7 +24,7 @@
         <header class="header">
           <div class="container">
             <div class="d-flex align-items-center">
-              <a href="index.html" class="logo d-inline-flex header__logo"><img src="img/logo.svg" alt="" class="img-fluid"></a>
+              <a href="index.html" class="logo d-inline-flex header__logo"><img src="img/logo.png" alt="" class="img-fluid"></a>
               <div class="slogan text_primary text_bold">Для тех, кто ищет себя <br>и хочет увеличить доход</div>
               <nav class="nav collapse d-xl-block" id="nav">
                 <ul class="nav-list d-xl-flex text_center_lg">
@@ -87,25 +87,25 @@
             <!-- consultation -->
             <div class="consultation consultation_personal">
               <div class="consultation__image order-md-2"><img src="img/personal.png" alt="" class="img-fluid"></div>
-              <div class="consultation__text text_center_sm">
-                <div class="title mb-lg title_heading">Личный финансовый план за час</div>
-                <p class="text_bold text_styling-xl text_size-lg mb-lg text_light">Практический тренинг по достижению личных финансовых целей</p>
+              <div class="consultation__text">
+                <div class="title mb-lg title_heading text_center_sm">Личный финансовый план за час</div>
+                <p class="text_bold text_styling-xl text_size-lg mb-lg text_light text_center_sm">Практический тренинг по достижению личных финансовых целей</p>
                 <div class="text_size-lg">Вы научитесь</div>
                 <ul class="check-list mb-lg">
                   <li class="check-list__item">делать план самостоятельно</li>
                   <li class="check-list__item">правильно принимать финансовые решения</li>
                   <li class="check-list__item">держать финансы под контролем</li>
                 </ul>
-                <a href="#" class="btn btn_primary btn_size-xl">смотреть 1 урок бесплатно</a>
+                <a href="#" class="btn btn_primary btn_size-xl w-100_sm">смотреть 1 урок бесплатно</a>
               </div>
             </div>
-            <div class="line consultation__line"></div>
+            <div class="line consultation__line consultation__line_personal"></div>
             <!-- /consultation -->
             <!-- for-whom -->
-            <section class="for-whom-section">
+            <section class="for-whom-section for-whom-section_personal">
               <div class="title text_center mb-sm">Знакомо ли вам следующее?</div>
               <!-- problems -->
-              <div class="problems problems_childrens">
+              <div class="problems problems_financial problems_personal">
                 <div class="problems-item text_center d-flex flex-column align-items-center">
                   <div class="advantages-item__icon bg_light problems-item__icon">
                     <img src="img/icons/advantages-3.svg" alt="" class="img-fluid">
@@ -133,7 +133,7 @@
                 <div class="problems__image"><img src="img/problems-personal.png" alt="" class="img-fluid"></div>
               </div>
               <!-- /problems -->
-              <div class="box box_md box_light problems_financial__box title_size-md text_center">
+              <div class="box box_md box_light problems_personal__box title_size-md text_center">
                 <p>Вы уже неоднократно пытались изменить свою финансовую жизнь..., но результата не было?</p>
                 <p class="text_bold text_primary">Сегодня все изменится!</p>
                 <p>Курс «Личный финансовый план за час» именно тот пазл, которого вам не хватало.</p>
@@ -141,8 +141,9 @@
             </section>
             <!-- /for-whom -->
             <!-- way-section -->
-            <section class="section way-section">
-              <h2 class="title mb-md">Личный финансовый план это путь...</h2>
+            <section class="way-section">
+              <div class="line way-section__line"></div>
+              <h2 class="title mb-md text_center_sm">Личный финансовый план это путь...</h2>
               <div class="way-section__content">
                 <div class="way-section__col">
                   <div class="way-section__title text_bold text_size-lg text_light text_center text_styling-xl">от сегодняшнего дня</div>
@@ -157,22 +158,26 @@
             <!-- /way-section -->
             <!-- author-section -->
             <section class="author-section">
-              <div class="line author-section__line"></div>
+              <div class="line author-section__line d-lg-block d-none"></div>
               <div class="author-section__content">
-                <div class="author-section__text order-lg-2">
-                  <h2 class="title mb-md">Об авторе курса</h2>
+                <div class="author-section__text order-xl-2">
+                  <div class="author-section__title d-md-flex d-lg-block align-items-end mb-md">
+                    <div class="line author-section__line order-md-2 d-lg-none"></div>
+                    <h2 class="title text_center_sm">Об авторе курса</h2>
+                  </div>
                   <p>Меня зовут Анна</p>
                   <p>«Личный финансовый план за час» это мой авторский курс, который сложился сам собой за время моих встреч с клиентами. Я всегда объясняла  финансы, рисуя на чистом листе А 4. Таким образом получилась форма Личного финансового плана, где вся информация на одном листе, что дает вам возможность не упускать детали.</p>
                   <p>Я проведу вас по алгоритму создания Личного финансового плана, попутно объясняя необходимую теорию.</p>
                   <p>6 уроков по 10 минут каждый покажут вам «вид сверху» на вашу финансовую жизнь</p>
                   <p class="mb-sm">И в итоге у вас через час будет готовый Личный финансовый план.</p>
-                  <div class="d-flex align-items-start">
-                    <a href="#" class="d-inline-flex align-items-center text_bold text_upper text_styling text_primary">Подробнее обо мне <span class="icon icon-caret ms-2 icon_double"></span></a>
-                    <div class="line author-section__line-end"></div>
+                  <div class="d-md-flex align-items-start text_center_sm">
+                    <a href="#" class="author-section__link d-inline-flex align-items-center text_bold text_upper text_styling-xl text_primary">Подробнее обо мне <span class="icon icon-caret ms-2 icon_double"></span></a>
+                    <div class="line author-section__line-end d-none d-xl-block"></div>
                   </div>
                 </div>
                 <div class="author-section__image"><img src="img/stub.png" alt="" class="w-100"></div>
               </div>
+              <div class="line author-section__line-center d-xl-none"></div>
             </section>
             <!-- /author-section -->
             <!-- contents-section -->
@@ -181,35 +186,35 @@
               <p class="text_center">Практический тренинг по достижению личных финансовых целей</p>
               <div class="contents-section__content d-grid grid-md-2">
                 <div class="advantages-item advantages-item_danger text_left align-items-start w-100">
-                  <div class="advantages-item__title text_bold text_dark text_center_md text_styling-xl text_size-lg">Вводное занятие БЕСПЛАТНО!</div>
+                  <div class="advantages-item__title text_bold text_dark text_styling-xl text_size-lg">Вводное занятие БЕСПЛАТНО!</div>
                   <p>Как убрать страхи за свое будущее?</p>
                 </div>
                 <div class="advantages-item text_left align-items-start w-100">
-                  <div class="advantages-item__title text_bold text_dark text_center_md text_styling-xl text_size-lg">1 занятие</div>
+                  <div class="advantages-item__title text_bold text_dark text_styling-xl text_size-lg">1 занятие</div>
                   <p>Что делать, когда не знаешь, что хочешь?</p>
                 </div>
                 <div class="advantages-item advantages-item_medium text_left align-items-start w-100">
-                  <div class="advantages-item__title text_bold text_dark text_center_md text_styling-xl text_size-lg">2 занятие</div>
+                  <div class="advantages-item__title text_bold text_dark text_styling-xl text_size-lg">2 занятие</div>
                   <p>Как увеличить доходы и найти деньги у себя в кошельке?</p>
                 </div>
                 <div class="advantages-item advantages-item_light text_left align-items-start w-100">
-                  <div class="advantages-item__title text_bold text_dark text_center_md text_styling-xl text_size-lg">3 занятие</div>
+                  <div class="advantages-item__title text_bold text_dark text_styling-xl text_size-lg">3 занятие</div>
                   <p>Как выйти из долгов раз и навсегда?</p>
                 </div>
                 <div class="advantages-item text_left align-items-start w-100">
-                  <div class="advantages-item__title text_bold text_dark text_center_md text_styling-xl text_size-lg">4 занятие</div>
+                  <div class="advantages-item__title text_bold text_dark text_styling-xl text_size-lg">4 занятие</div>
                   <p>Что делать, чтобы деньги были всегда?</p>
                 </div>
                 <div class="advantages-item advantages-item_medium text_left align-items-start w-100">
-                  <div class="advantages-item__title text_bold text_dark text_center_md text_styling-xl text_size-lg">5 занятие</div>
+                  <div class="advantages-item__title text_bold text_dark text_styling-xl text_size-lg">5 занятие</div>
                   <p>Как принимать правильные финансовые решения?</p>
                 </div>
                 <div class="advantages-item advantages-item_light text_left align-items-start w-100">
-                  <div class="advantages-item__title text_bold text_dark text_center_md text_styling-xl text_size-lg">6 занятие</div>
+                  <div class="advantages-item__title text_bold text_dark text_styling-xl text_size-lg">6 занятие</div>
                   <p>Как создать свою систему достижения финансовых целей?</p>
                 </div>
                 <div class="advantages-item text_left align-items-start w-100">
-                  <div class="advantages-item__title text_bold text_dark text_center_md text_styling-xl text_size-lg">7 занятие</div>
+                  <div class="advantages-item__title text_bold text_dark text_styling-xl text_size-lg">7 занятие</div>
                   <p>Как усилить мотивацию в достижении целей?</p>
                 </div>
               </div>
@@ -220,6 +225,7 @@
                 <div class="dropdown additional__dropdown">
                   <a href="#" class="dropdown-toggle icon icon-quest"></a>
                   <div class="dropdown-menu dropdown-menu_tooltip text_left text_size-sm">
+                    <div class="dropdown-menu__close icon icon-close d-lg-none"></div>
                     <ul class="dots-list dots-list_sm">
                       <li class="dots-list__item">Прививка от бедности</li>
                       <li class="dots-list__item">Семейный бюджет на месяц</li>
@@ -245,7 +251,9 @@
             <section class="work-section work-section_personal">
               <div class="d-flex align-items-end justify-content-between">
                 <div class="line work-section_personal__line order-2"></div>
-                <h2 class="title">Как проходит обучение?</h2>
+                <h2 class="title">Как проходит 
+                  <span class="d-none d-lg-inline">обучение</span><span class="d-lg-none">консультация</span>?
+                </h2>
               </div>
               <div class="work-section__content work-section__content_personal">
                 <div class="work-section__text">
@@ -464,16 +472,18 @@
             <!-- /tariff-section -->
             <!-- free -->
             <section class="free-section">
-              <div class="free-section__line line"></div>
-              <h2 class="title text_center mb-md">Бесплатный вводный урок</h2>
-              <div class="text_size-lg text_bold text_styling text_light mb-md text_center">Как убрать страхи за свое будущее?</div>
+              <div class="free-section__title">
+                <div class="free-section__line line"></div>
+                <h2 class="title text_center mb-sm">Бесплатный вводный урок</h2>
+              </div>
+              <div class="text_size-lg text_bold text_styling-xl text_light mb-md text_center">Как убрать страхи за свое будущее?</div>
               <div class="free-section__image">
-                <img src="img/free.jpg" alt="" class="imd-fluid">
+                <img src="img/free.jpg" alt="" class="img-fluid">
               </div>
             </section>
             <!-- /free -->
             <!-- faq -->
-            <section class="section faq-section faq-section_childrens">
+            <section class="section faq-section faq-section_childrens faq-section_personal">
               <h2 class="title text_center mb-lg">Часто задаваемые вопросы</h2>
               <div class="faq-section__content">
                 <div class="faq-section__text order-lg-2">
@@ -567,7 +577,7 @@
                 </div>
                 <div class="footer__col-2">
                   <div class="footer__title text_upper">Бесплатно</div>
-                  <p class="text_size-md">Мини-книга «Как увеличить доход с помощью астрологии?»</p>
+                  <p class="text_size-md">Мини-книга <a href="#" class="text_inversion">«Стратегия увеличения личного дохода»</a></p>
                 </div>
                 <div class="footer__col-3">
                   <div class="footer__title text_upper"><a href="#" class="text_inversion">Читайте</a></div>

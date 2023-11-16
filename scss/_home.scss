@@ -180,6 +180,23 @@
       }
     }
   }
+
+  &_smd{
+    width: 86rem;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 4rem 4rem 4.3rem;
+    line-height: 140%;
+    border-radius: 4rem;
+
+    @include bp(md){
+      border-radius: 2rem;
+    }
+
+    @include bp(sm){
+      border-radius: 1rem;
+    }
+  }
 }
 
 .promo{

@@ -1,18 +1,151 @@
+.consultation_astrology{
+  .consultation__image{
+    margin: -1.4rem 0 0 10%;
+  }
+
+  .title{
+    @include bp(xl-up){
+      margin-right: -15rem;
+      position: relative;
+    }
+  }
+
+  .consultation__box{
+    margin-top: 6.8rem;
+  }
+}
+
+.consultation__line_astrology{
+  margin: -3.5rem -3.3rem -4rem -0.1rem;
+  width: 8.9%;
+  height: 22.1rem;
+  border-bottom: 4px solid $primary;
+  border-left: 4px solid $primary;
+  border-right: none;
+
+  @include bp(xxl){
+    margin-top: 1.3rem;
+  }
+
+  @include bp(md){
+    margin: -1.3rem -3.3rem -1.9rem -0.1rem;
+    width: 2.5%;
+    height: 11.1rem;
+  }
+
+  @include bp(sm){
+    width: 0;
+    margin: 0.3rem auto 1.1rem;
+    height: 5.6rem;
+  }
+
+  &:before{
+    left: auto;
+    right: -0.9rem;
+
+    @include bp(sm){
+      right: -0.4rem;
+    }
+  }
+}
+
+// for-whom-section_astrology
+.for-whom-section_astrology{
+  .title{
+    padding: 0 10%;
+  }
+
+  .advantages-group{
+    margin-bottom: 0;
+  }
+
+  .advantages-item{
+    padding-bottom: 0.7rem;
+  }
+
+  .advantages-item__title-md{
+    line-height: normal;
+    margin: 0.1rem 0 1.5rem;
+  }
+}
+
+
+// about-astrology
 .about-astrology {
 
   &__content {
     display: grid;
-    grid-template-columns: auto 40%;
-    grid-gap: 0 6.1rem;
+    grid-template-columns: auto 38%;
+    grid-gap: 0 5rem;
   }
 
   &__text {
   }
 
+  .title{
+    @include bp(xxxl-up){
+      margin-right: -2rem;
+    }
+  }
+
   &__image {
+    margin: 0.2rem -3% 0 0.2rem;
   }
 
   &__line-end {
+    margin: 0 0 2.5rem 0.6rem;
   }
 }
 
+// step-item_astrology
+.step-item_astrology{
+  @include bp(lg-up){
+    grid-template-columns: 42.5% auto;
+  }
+
+  .step-item__content-title{
+    margin-right: 0;
+  }
+}
+
+// contents-section_astrology
+.contents-section_astrology{
+  &__line{
+    margin: 1rem 4px 3.2rem auto;
+  }
+
+  .contents-section__content{
+    @include bp(lg-up){
+      margin: 7rem -1.1rem 4.2rem;
+    }
+  }
+
+  .advantages-item__title{
+    @include bp(lg-up){
+      margin-bottom: 1rem;
+    }
+  }
+
+  .contents-section__col{
+    grid-gap: 4.6rem 0;
+  }
+
+  .advantages-item_clear{
+    p{
+      @include bp(xl-up){
+        padding: 1rem;
+      }
+    }
+  }
+
+  .contents-section__col{
+    @include bp(lg-up){
+      grid-gap: 5.4rem;
+    }
+  }
+
+  .contents-section__image{
+    bottom: 9rem;
+    right: 0;
+  }
+}

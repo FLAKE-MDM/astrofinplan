@@ -358,6 +358,22 @@
     }
   }
 
+  &__close{
+    position: absolute;
+    top: 0.7rem;
+    right: 0.7rem;
+    z-index: 2;
+    width: 2.9rem!important;
+    height: 2.9rem!important;
+
+    @include bp(sm){
+      width: 1.6rem!important;
+      height: 1.6rem!important;
+      top: 1.2rem;
+      right: 1.2rem;
+    }
+  }
+
   &_tooltip{
     border-radius: 2rem;
     border: 3px solid var(--green, #14918F);
@@ -368,6 +384,18 @@
     top: auto;
     min-width: 37.8rem;
     letter-spacing: -0.001rem;
+
+    @include bp(lg){
+      margin: 0 0 1.4rem;
+      left: auto;
+      right: 0;
+      bottom: 100%;
+    }
+
+    @include bp(sm){
+      min-width: 31.9rem;
+      margin: 0;
+    }
   }
 
   &-list{

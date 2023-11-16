@@ -231,6 +231,11 @@
     width: 9.1rem;
     height: 2.4rem;
     background-image: url(../img/icons/arrow-add.svg);
+
+    @include bp(md){
+        background-image: url(../img/icons/arrow-add-tablet.svg);
+        height: 1.6rem;
+    }
 }
 
 .icon-quest{
@@ -249,36 +254,4 @@
     width: 2.4rem;
     height: 2.4rem;
     background-image: url(../img/icons/minus.svg);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.icon-{
-    width: rem;
-    height: rem;
-    background-image: url(../img/icons/.svg);
-}
-
-
-.icon-{
-    width: rem;
-    height: rem;
-
-    &:before{
-        background-image: url(../img/icons/.svg);
-    }
-
-    &:after{
-        background-image: url(../img/icons/-active.svg);
-    }
 }

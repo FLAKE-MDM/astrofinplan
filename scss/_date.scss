@@ -1,0 +1,506 @@
+.consultation_date{
+  .consultation__image{
+    margin: -12.2rem 1.1rem 0 -0.9rem;
+
+    @include bp(xl){
+      margin-top: 0;
+    }
+
+    @include bp(md){
+      margin: -6.9rem -2.5rem 0 -2rem;
+    }
+
+    @include bp(sm){
+      margin: -0.5rem 3.3% 0.7rem 3.6%;
+    }
+  }
+
+  .text_size-lg{
+    @include bp(sm){
+      line-height: 120%;
+      margin-bottom: 2.1rem;
+    }
+  }
+
+  .consultation__box{
+    margin-top: 5.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @include bp(md){
+      margin-top: 0;
+    }
+
+    .btn{
+      @include bp(md){
+        width: auto !important;
+      }
+    }
+  }
+}
+
+.consultation__line_date{
+  margin: -3rem -3.3rem -4rem -0.1rem;
+  width: 11.5%;
+  height: 22.1rem;
+  border-bottom: 4px solid $primary;
+  border-left: 4px solid $primary;
+  border-right: none;
+
+  @include bp(xxl){
+    margin-top: 1.3rem;
+  }
+
+  @include bp(md){
+    margin: -1.3rem -3.3rem -1.9rem -0.1rem;
+    width: 2.5%;
+    height: 11.1rem;
+  }
+
+  @include bp(sm){
+    width: 0;
+    margin: 0.3rem auto 1.1rem;
+    height: 5.6rem;
+  }
+
+  &:before{
+    left: auto;
+    right: -0.9rem;
+
+    @include bp(sm){
+      right: -0.4rem;
+    }
+  }
+}
+
+// for-whom-section_date
+.for-whom-section_date{
+  .title{
+    padding: 0 12%;
+
+    @include bp(md){
+      padding: 0 4%;
+    }
+
+    @include bp(sm){
+      padding: 0;
+    }
+  }
+
+  .advantages-group{
+    @include bp(lg-up){
+      grid-gap: 0 2rem;
+    }
+
+    @include bp(sm){
+      grid-gap: 4.25rem 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .advantages-item{
+    @include bp(lg-up){
+      min-height: 19rem;
+    }
+
+    @include bp(md){
+      min-height: 14.1rem;
+    }
+
+    @include bp(sm){
+      min-height: 13.6rem;
+    }
+
+    .advantages-item__icon{
+      @include bp(md){
+        margin-bottom: -0.4rem;
+      }
+
+      @include bp(sm){
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    p{
+      @include bp(md){
+        margin: auto;
+        min-height: 3.9rem;
+      }
+    }
+  }
+}
+
+.problems_date__box{
+  margin: 15.3rem auto 0;
+  padding: 5rem 5.5rem;
+  line-height: 120%;
+
+  @include bp(md){
+    margin-top: 4rem;
+    font-size: 1.6rem;
+    line-height: normal;
+    padding: 2.5rem 2rem 3.1rem;
+  }
+
+  @include bp(sm){
+    margin-top: 1.9rem;
+    line-height: 120%;
+    padding: 2rem 2rem 1.9rem;
+  }
+
+  &-line{
+    position: absolute;
+    right: -0.3rem;
+    bottom: 10.4rem;
+    border-bottom: 4px solid #14918F;
+    width: 13%;
+    height: 23rem;
+
+    @include bp(xxl){
+      width: 10%;
+    }
+  }
+}
+
+// about-date
+.about-date{
+  &__line{
+    margin: 1.9rem 19.4% -4.8rem;
+
+    @include bp(lg-up){
+      height: 18rem;
+    }
+
+    @include bp(lg){
+      margin: 2rem auto;
+    }
+
+    @include bp(md){
+      margin-bottom: 0.4rem;
+    }
+
+    @include bp(sm){
+      margin: 0.4rem auto 1.3rem;
+    }
+
+    &-end{
+      margin: 0.3rem 0.4rem 3.5rem auto;
+      height: 9.3rem;
+
+      @include bp(md){
+        margin: 0.3rem auto 1.8rem;
+        height: 7.4rem;
+      }
+
+      @include bp(sm){
+        margin: 0rem auto 1.2rem;
+        height: 5.4rem;
+      }
+    }
+  }
+
+  &__image{
+    margin: 8rem 0 0 -0.2rem;
+
+    @include bp(md){
+      margin: 2rem 0 0;
+    }
+
+    img{
+      @include bp(md){
+        max-height: 34rem;
+      }
+
+      @include bp(sm){
+        min-height: 17.9rem;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__text{
+    margin-right: -1rem;
+
+    @include bp(md){
+      margin: 0;
+    }
+  }
+
+  .title{
+    @include bp(md){
+      margin-bottom: 2.8rem;
+    }
+
+    @include bp(sm){
+      margin-bottom: 1.9rem;
+    }
+  }
+
+  p.mb-md{
+    @include bp(md){
+      margin-bottom: 1.5rem;
+    }
+
+    @include bp(sm){
+      margin-bottom: 1.4rem;
+    }
+  }
+}
+
+// step-item_date
+.step-item_date{
+  @include bp(lg-up){
+    grid-template-columns: 42.5% auto;
+  }
+}
+
+.text-box-line_date{
+  height: 19.6rem;
+  width: 27.5rem;
+  margin: 2.2rem 5.8rem 0 2.9rem;
+
+  @include bp(md){
+    width: 0;
+    height: 7.7rem;
+    margin: 1rem auto 1.4rem;
+  }
+
+  @include bp(sm){
+    height: 5.7rem;
+    margin: 6px auto 0.9rem;
+  }
+}
+
+.text-box_date{
+  margin-top: 14.8rem;
+
+  @include bp(lg-up){
+    padding: 3.8rem 3.5rem 4.4rem 4rem;
+  }
+
+  @include bp(md){
+    margin-top: 0;
+    padding-bottom: 3.2rem;
+  }
+
+  @include bp(sm){
+    padding-bottom: 2.1rem;
+  }
+}
+
+// work-section_date
+.work-section_date{
+  .line_margin{
+    height: 9.3rem;
+    margin: 3.3rem 0 2.5rem 1.1rem;
+
+    @include bp(md){
+      border-bottom: 2px solid $primary;
+      width: 32.2%;
+      margin: 0.9rem -0.1rem -2.1rem auto;
+      height: 11.1rem;
+    }
+
+    @include bp(sm){
+      margin: 0.5rem -0.1rem -2.7rem auto;
+      height: 9.3rem;
+    }
+  }
+
+  .line_center{
+    @include bp(md){
+      height: 7.3rem;
+    }
+
+    @include bp(sm){
+      height: 5.4rem;
+      margin: 0.4rem auto 1.1rem;
+    }
+  }
+
+  &__line-end{
+    width: 17.6%;
+    border-top: 4px solid $primary;
+    margin: 0.9rem 5.3% 2.8rem 32.6%;
+    flex-shrink: 0;
+    height: 13.9rem;
+
+    @include bp(md){
+      width: 0;
+      margin: -1.2rem auto 2.9rem;
+      height: 7.3rem;
+    }
+
+    @include bp(sm){
+      margin: -1.8rem auto 1.4rem;
+     height: 5.4rem;
+    }
+
+    &::before{
+      left: auto;
+      right: -0.9rem;
+
+      @include bp(md){
+        right: -0.6rem;
+      }
+    }
+  }
+
+  .work-section__content{
+    @include bp(lg-up){
+      grid-template-columns: auto 34%;
+    }
+
+    @include bp(md){
+      grid-template-columns: 100%;
+    }
+  }
+
+  .work-section__text{
+    @include bp(md){
+      padding-top: 1.5rem;
+    }
+
+    @include bp(sm){
+      padding-top: 0.5rem;
+    }
+  }
+
+  .steps-list-item{
+    &:first-child{
+      @include bp(lg-up){
+        margin-right: -3rem;
+      }
+
+      @include bp(md){
+        margin-right: 0;
+      }
+    }
+
+    &:not(:last-child){
+      @include bp(lg-up){
+        margin-bottom: 5.8rem;
+      }
+
+      @include bp(md){
+        margin-bottom: 3.8rem;
+      }
+
+      @include bp(sm){
+        margin-bottom: 2.1rem;
+      }
+    }
+
+    p{
+      @include bp(lg-up){
+        margin-top: 2.1rem;
+      }
+    }
+  }
+
+  .steps-list-item__num{
+
+    @include bp(lg-up){
+      top: 1.3rem;
+    }
+
+    &::after{
+      @include bp(sm){
+        margin-top: 1.4rem;
+      }
+    }
+  }
+
+  .work-section__image{
+    margin: 3.9rem -7.6% 0 -4.5%;
+
+    @include bp(lg){
+      align-self: flex-end;
+    }
+
+    @include bp(md){
+      width: 43%;
+      margin: -2.3rem auto;
+    }
+
+    @include bp(sm){
+      width: 71%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.problems_financial__box_date{
+  @include bp(md){
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-align: center;
+    color: $black;
+    padding: 2.9rem 3rem 2.8rem;
+  }
+
+  @include bp(sm){
+    padding: 2.1rem 2rem;
+    line-height: 120%;
+  }
+}
+
+// price-section_date
+.price-section_date{
+  padding-bottom: 8.5rem;
+
+  @include bp(md){
+    padding-bottom: 4rem;
+  }
+
+  @include bp(sm){
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .price-item{
+    @include bp(xl-up){
+      padding-left: 9.2rem;
+      padding-right: 9.2rem;
+    }
+  }
+
+  .price-item__body{
+    @include bp(md){
+      margin-top: 1.4rem;
+    }
+
+    @include bp(sm){
+      margin-top: 1.1rem;
+    }
+  }
+
+  .mb-lg{
+    @include bp(sm){
+      margin-bottom: 2.8rem;
+    }
+  }
+}
+
+// faq-section_date
+.faq-section_date{
+  .faq-item:not(:last-child){
+    @include bp(md){
+      margin-bottom: 2.9rem;
+    }
+
+    @include bp(sm){
+      margin-bottom: 2rem;
+    }
+  }
+
+  .faq-section__image{
+    @include bp(md){
+      margin-top: 0.6rem;
+    }
+
+    @include bp(sm){
+      margin-top: 1.1rem;
+    }
+  }
+}
