@@ -191,10 +191,13 @@
 
     @include bp(md){
       border-radius: 2rem;
+      padding: 3rem 4rem 2.8rem;
     }
 
     @include bp(sm){
       border-radius: 1rem;
+      padding: 2.1rem 3rem 1.9rem;
+      line-height: 120%;
     }
   }
 }
@@ -263,19 +266,19 @@
       position: absolute;
       border-radius: 50%;
       border: 1px solid #D9D9D9;
-  
+
       @include bp(md){
         display: none;
       }
     }
-  
+
     &:before{
       width: 3.4rem;
       height: 3.4rem;
       left: 33.3%;
       top: -0.8rem;
     }
-  
+
     &:after{
       width: 5.9rem;
       height: 5.9rem;
