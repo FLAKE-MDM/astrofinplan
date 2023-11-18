@@ -2715,6 +2715,9 @@ body.overflow-none {
     padding-top: 2rem;
   }
 }
+.footer a:not(.btn):active {
+  color: #14918F !important;
+}
 .footer__content {
   display: grid;
   grid-template-columns: 30.7% 20% 25.2% 20%;
@@ -6049,6 +6052,11 @@ body.overflow-none {
   margin-top: 10.8rem;
   border-radius: 4rem;
   line-height: 140%;
+}
+@media only screen and (min-width: 992px) {
+  .text-box.text_size-lg {
+    font-size: 2.8rem;
+  }
 }
 @media only screen and (max-width: 991px) {
   .text-box {

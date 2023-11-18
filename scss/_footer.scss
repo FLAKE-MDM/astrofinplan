@@ -12,6 +12,10 @@
         padding-top: 2rem;
     }
 
+    a:not(.btn):active{
+        color: $primary!important;
+    }
+
     &__content{
         display: grid;
         grid-template-columns: 30.7% 20% 25.2% 20%;
