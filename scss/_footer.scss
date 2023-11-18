@@ -14,7 +14,7 @@
 
     a.text_inversion{
         @include bp(sm){
-            &:active{
+            &:active, &:focus{
                 color: $primary!important;
             }
         }
@@ -307,7 +307,7 @@
             color: #fff;
 
             @include bp(sm){
-                &:active{
+                &:active, &:focus{
                     color: $primary!important;
                 }
             }

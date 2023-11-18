@@ -2716,7 +2716,7 @@ body.overflow-none {
   }
 }
 @media only screen and (max-width: 767px) {
-  .footer a.text_inversion:active {
+  .footer a.text_inversion:active, .footer a.text_inversion:focus {
     color: #14918F !important;
   }
 }
@@ -3018,7 +3018,7 @@ body.overflow-none {
   color: #fff;
 }
 @media only screen and (max-width: 767px) {
-  .footer-nav__link:active {
+  .footer-nav__link:active, .footer-nav__link:focus {
     color: #14918F !important;
   }
 }
