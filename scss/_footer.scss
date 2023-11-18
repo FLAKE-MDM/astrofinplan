@@ -12,8 +12,12 @@
         padding-top: 2rem;
     }
 
-    a:not(.btn):active{
-        color: $primary!important;
+    a.text_inversion{
+        @include bp(sm){
+            &:active{
+                color: $primary!important;
+            }
+        }
     }
 
     &__content{
@@ -301,6 +305,12 @@
 
         &__link{
             color: #fff;
+
+            @include bp(sm){
+                &:active{
+                    color: $primary!important;
+                }
+            }
         }
 
         &__icon{

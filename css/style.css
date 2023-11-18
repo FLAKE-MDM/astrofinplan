@@ -2715,8 +2715,10 @@ body.overflow-none {
     padding-top: 2rem;
   }
 }
-.footer a:not(.btn):active {
-  color: #14918F !important;
+@media only screen and (max-width: 767px) {
+  .footer a.text_inversion:active {
+    color: #14918F !important;
+  }
 }
 .footer__content {
   display: grid;
@@ -3014,6 +3016,11 @@ body.overflow-none {
 }
 .footer-nav__link {
   color: #fff;
+}
+@media only screen and (max-width: 767px) {
+  .footer-nav__link:active {
+    color: #14918F !important;
+  }
 }
 .footer-nav__icon {
   min-width: 2.8rem;
