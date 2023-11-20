@@ -10234,11 +10234,6 @@ body.overflow-none {
     padding: 0.5rem 0 0 0.9rem;
   }
 }
-@media only screen and (min-width: 992px) {
-  .work-section_forecast .work-section__text p {
-    margin-top: 2.1rem;
-  }
-}
 .work-section_forecast .work-section__image {
   margin: 0.3rem -13% 0 -10.5%;
 }
