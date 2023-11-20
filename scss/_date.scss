@@ -377,39 +377,39 @@
       }
     }
 
-    &:not(:last-child){
-      @include bp(lg-up){
-        margin-bottom: 5.8rem;
-      }
+    // &:not(:last-child){
+    //   @include bp(lg-up){
+    //     margin-bottom: 5.8rem;
+    //   }
 
-      @include bp(md){
-        margin-bottom: 3.8rem;
-      }
+    //   @include bp(md){
+    //     margin-bottom: 3.8rem;
+    //   }
 
-      @include bp(sm){
-        margin-bottom: 2.1rem;
-      }
-    }
+    //   @include bp(sm){
+    //     margin-bottom: 2.1rem;
+    //   }
+    // }
 
-    p{
-      @include bp(lg-up){
-        margin-top: 2.1rem;
-      }
-    }
+    // p{
+    //   @include bp(lg-up){
+    //     margin-top: 2.1rem;
+    //   }
+    // }
   }
 
-  .steps-list-item__num{
+  // .steps-list-item__num{
 
-    @include bp(lg-up){
-      top: 1.3rem;
-    }
+  //   @include bp(lg-up){
+  //     top: 1.3rem;
+  //   }
 
-    &::after{
-      @include bp(sm){
-        margin-top: 1.4rem;
-      }
-    }
-  }
+  //   &::after{
+  //     @include bp(sm){
+  //       margin-top: 1.4rem;
+  //     }
+  //   }
+  // }
 
   .work-section__image{
     margin: 3.9rem -7.6% 0 -4.5%;

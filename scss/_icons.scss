@@ -31,7 +31,8 @@
             opacity: 0;
         }
     }
-    .active>&, .components-item.active &, a:active>&{
+    .active>&, .components-item.active &, a:active>&, .footer-nav__link:hover &, 
+    .footer-nav__link:active &{
         &:before{opacity: 0;}
         &:after{opacity: 1;}
     }
@@ -49,12 +50,29 @@
 .icon-tg-circle{
     background-image: url(../img/icons/tg-circle.svg);
 }
+
 .icon-whatsapp-inversion-circle{
-    background-image: url(../img/icons/whatsapp-inversion-circle.svg);
+
+    &:before{
+        background-image: url(../img/icons/whatsapp-inversion-circle.svg);
+    }
+
+    &:after{
+        background-image: url(../img/icons/whatsapp-inversion-circle-active.svg);
+    }
 }
+
 .icon-tg-inversion-circle{
-    background-image: url(../img/icons/tg-inversion-circle.svg);
+
+    &:before{
+        background-image: url(../img/icons/tg-inversion-circle.svg);
+    }
+
+    &:after{
+        background-image: url(../img/icons/tg-inversion-circle-active.svg);
+    }
 }
+
 .icon-whatsapp-circle-nav{
     width: 4.1rem;
     height: 4.3rem;
@@ -70,46 +88,78 @@
     height: 2.3rem;
     background-image: url(../img/icons/arrow-up.svg);
 }
+
 .icon-vk-inversion{
-    width: 21px;
-    height: 15px;
-    background-image: url(../img/icons/vk-inversion.svg);
+    width: 2.1rem;
+    height: 1.5rem;
 
     @include bp(sm){
         width: 1.6rem;
         height: 1rem;
     }
+
+    &:before{
+        background-image: url(../img/icons/vk-inversion.svg);
+    }
+
+    &:after{
+        background-image: url(../img/icons/vk-primary.svg);
+    }
 }
+
 .icon-tg-inversion{
     width: 2.1rem;
     height: 1.9rem;
-    background-image: url(../img/icons/tg-inversion.svg);
 
     @include bp(sm){
         width: 1.6rem;
         height: 1.4rem;
     }
+
+    &:before{
+        background-image: url(../img/icons/tg-inversion.svg);
+    }
+
+    &:after{
+        background-image: url(../img/icons/tg-primary.svg);
+    }
 }
+
 .icon-ins-inversion{
     width: 2.1rem;
     height: 2.2rem;
-    background-image: url(../img/icons/ins-inversion.svg);
 
     @include bp(sm){
         width: 1.6rem;
         height: 1.7rem;
     }
+    &:before{
+        background-image: url(../img/icons/ins-inversion.svg);
+    }
+
+    &:after{
+        background-image: url(../img/icons/ins-primary.svg);
+    }
 }
+
 .icon-youtube-inversion{
     width: 24px;
     height: 18px;
-    background-image: url(../img/icons/youtube-inversion.svg);
 
     @include bp(sm){
         width: 1.9rem;
         height: 1.3rem;
     }
+
+    &:before{
+        background-image: url(../img/icons/youtube-inversion.svg);
+    }
+
+    &:after{
+        background-image: url(../img/icons/youtube-primary.svg);
+    }
 }
+
 
 .icon-whatsapp-support{
     width: 5.7rem;

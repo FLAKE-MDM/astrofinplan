@@ -212,19 +212,19 @@
     }
   }
 
-  .steps-list-item{
-    &:not(:last-child){
-      @include bp(md-up){
-        margin-bottom: 3.2rem;
-      }
-    }
+  // .steps-list-item{
+  //   &:not(:last-child){
+  //     @include bp(md-up){
+  //       margin-bottom: 3.2rem;
+  //     }
+  //   }
 
-    p{
-      @include bp(lg-up){
-        margin-top: 2.1rem;
-      }
-    }
-  }
+  //   p{
+  //     @include bp(lg-up){
+  //       margin-top: 2.1rem;
+  //     }
+  //   }
+  // }
 
   .work-section__image{
     margin: 0.2rem -11.2% 0 0;

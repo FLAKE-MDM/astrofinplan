@@ -357,6 +357,12 @@ body{
     color: $dark;
     font-family: Verdana, Arial, sans-serif;
 
+    &_margin{
+        @include bp(lg-up){
+            margin-bottom: 5.5rem;
+        }
+    }
+
     @include bp(md){
         font-size: 1.2rem;
         margin: 1.5rem 0 5.9rem;
@@ -435,6 +441,10 @@ body{
 
     &__link{
         color: $primary;
+
+        &:not(.btn):active{
+            color: $orange!important;
+        }
 
         &.active{
             color: $orange;

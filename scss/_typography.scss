@@ -19,7 +19,7 @@ a{
     }
 
     &.text_primary{
-        &:active{
+        &:not(.btn):active{
             color: $orange!important;
         }
 

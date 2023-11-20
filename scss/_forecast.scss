@@ -296,26 +296,26 @@
     }
   }
 
-  .steps-list-item:not(:last-child){
-    margin-bottom: 4rem;
+  // .steps-list-item:not(:last-child){
+  //   margin-bottom: 4rem;
 
-    @include bp(sm){
-      margin-bottom: 2.1rem;
-    }
-  }
+  //   @include bp(sm){
+  //     margin-bottom: 2.1rem;
+  //   }
+  // }
 
-  .steps-list-item__num{
+  // .steps-list-item__num{
 
-    @include bp(lg-up){
-      top: 1.3rem;
-    }
+  //   @include bp(lg-up){
+  //     top: 1.3rem;
+  //   }
 
-    &::after{
-      @include bp(sm){
-        margin-top: 1.4rem;
-      }
-    }
-  }
+  //   &::after{
+  //     @include bp(sm){
+  //       margin-top: 1.4rem;
+  //     }
+  //   }
+  // }
 
   .work-section__image{
     margin: 0.3rem -13% 0 -10.5%;

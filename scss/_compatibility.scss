@@ -283,17 +283,17 @@
     }
   }
 
-  .steps-list-item:not(:last-child) {
-    margin-bottom: 6.5rem;
+  // .steps-list-item:not(:last-child) {
+  //   margin-bottom: 6.5rem;
 
-    @include bp(md){
-      margin-bottom: 4.7rem;
-    }
+  //   @include bp(md){
+  //     margin-bottom: 4.7rem;
+  //   }
 
-    @include bp(sm){
-      margin-bottom: 2.4rem;
-    }
-  }
+  //   @include bp(sm){
+  //     margin-bottom: 2.4rem;
+  //   }
+  // }
 
   .work-section__image{
     align-self: flex-end;

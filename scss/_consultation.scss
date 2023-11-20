@@ -772,30 +772,52 @@
   &-item {
     padding-left: 14.4rem;
     position: relative;
+    min-height: 11.1rem;
 
     @include bp(md){
       padding-left: 9.4rem;
+      min-height: 7.1rem;
     }
 
     @include bp(sm){
       padding-left: 6.6rem;
     }
 
-    .text_size-lg{
-      @include bp(md){
-        font-size: 1.8rem;
-      }
-    }
-
     &:not(:last-child){
-      margin-bottom: 7.5rem;
+      margin-bottom: 4.2rem;
 
       @include bp(md){
-        margin-bottom: 4.5rem;
+        margin-bottom: 2.8rem;
       }
 
       @include bp(sm){
-        margin-bottom: 2.3rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    &:nth-of-type(3){
+      .steps-list-item__num:after{
+        margin-top: 0.8rem;
+
+        @include bp(md){
+          margin-top: 0.6rem;
+        }
+      }
+    }
+
+    &:nth-of-type(4){
+      .steps-list-item__num:after{
+        margin-top: 0.8rem;
+
+        @include bp(md){
+          margin-top: 0.6rem;
+        }
+      }
+    }
+
+    .text_size-lg{
+      @include bp(md){
+        font-size: 1.8rem;
       }
     }
 
@@ -850,7 +872,7 @@
         height: 5.9rem;
         background: url(../img/icons/arrow-down.svg) 0 0 no-repeat;
         background-size: contain;
-        margin-top: 0.6rem;
+        margin-top: 0.5rem;
 
         @include bp(md){
           width: 1.5rem;
